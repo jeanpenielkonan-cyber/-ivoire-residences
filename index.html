@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ivoire Résidences</title>
+<meta name="description" content="Réservez votre résidence meublée en ligne, par jour de 24 h.">
+<meta name="theme-color" content="#F4F7F7">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ivoire Résidences">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAOG0lEQVR4Xu2de3AV1R3H9+zuvbnJTUISkxIeSUgAITwCgQABCYmABnkbKG8wAXnlAQl5om2ttrUzte1Yp3awg061rVOn1kFgUBRExNramY5OnXHqTMeqozOOM0h29+Y+d8/p7J6QMprk7t7ce3fv7u8zmeGfcHP23O9+9/c9r0XelmYGAIaDhW4BRgLEAYA4AOOAcwDgHIBxwDkAcA7AOOAcADgHYBxwDgCcAzAOOAcAzgEYB5wDAOcAjAPOAYBzAMYB5wDAOQDjgHMA4ByAccA5AHAOwDjgHAA4B2AccA4AnAMwDjgHAM4BGAecAwDn0AGLEMfC3fJ/oC8G4VjWHw6LgQDoYwgQhwrPsqIkVZeVbZw/X5QkjmWRDqexPU4XB2JUzxAkaV1l5cX2jpdbWptX3yVKEtKw/dc/Oo4WB1WAKEnNq1efO3bcm5amYPzk7t0/37nLFwhgjFlnlyDOFQeLEMZYCgQe27Hzyd17iAbLsgrGnXff/WJzC0NIKBJxcgniUHHwLBuKRAghfz7a3FVfr2CMGM1ItKeMjHHDggVXunsKMjOlQIDnOGc+X5woDp7jhEAgPyvrja7urQsXyhirFegtFQav6WNxaenbfScri4sFSXKmPhwnDlUZklRVUnKtt6+6rEzGmB+usOC158uU22673NV9b1WVIIq88yKMg8SBtMgqCEJDVdWV7p6y/HxlBGVQOJbFhOSkp7/U3HLinrWCFmFYJ0UYp4hDfWwgJEhix9q1Lx5tztSCSdRiUy1aCcGE/GLbtl/v2+cLBOgzyCEliCOuk9OeEVIg8MTefb/ctp0wDCFE53dMVaVg3HLnypfbjvEI+cPhYZ9E9sP+4uA5LhAOsQidaW1rW7lKDSYGB7iGIsyGefOudPdMzskR/H6XAyKMzcXh4jhhwDcpJ/dyV9em+fMHg0lM9ziNMAtLSt7s6V06dVq/KNpeH3YWh4vj+kVx6dRpV7q6F08pHSmY6IdGmJK8vFfa27dVV/cLgr0jjD3FgRDiWba/v3/H0mWvn+ickp8/dmXcGmHGpae/cPjIyU2bBEli7BthbCgOmjYFSerbtOn5Q4e8aWmYDD+YERssQkSLMI/e2/BUU1MgFIoois7yNrWwmzg4lo0oij8U+k1j408btgzOmKA4XyYtaWWMD62oPdt2LN3lGggG7TeKGudeMxee4waCwXTe9XJr29HauhiCiX7okJqsKGvnzr3c2TW1oEDw+WxWotpHHGow8fnKCgpe7+xcX1Eha1YfWzDRD89xMlYqi4svdXWvmDHDZhHGJuKgwaTm9tsvdXYtLCmRFSVpJs+znIxxUW7uK+0du5bd0S8I35jGS11SXhxIWxXcLwj7ampe7ThRnJenzpgkd4SK12ZhMtzuPx48+IOGBtHnU5eGpP4sTGqLgwYH0ef73uZ7n91/IMPtxrrHxeMLbYlCyMMbN53efyAiy2FZTvVR9hQWB8eyYVmOyPJvG5t+tHkzpku5zLtf6ZytjPGB5cvPth3L8aSLgUBKl6ipKg6e46RAcJzHc6a19eCKFTJW6AxZfP3AKDTCRBSlfvbs1zo7yydM6Jek1NVHSoqDBpMZheMvnui8Z87ciKLwrIVW8rnUCIMrJk9+o6t75azZqRthUk8c6ri4KNaVl7/Z3TO/qEjG2IK3Jp2FGZ+d/WpHx96amn5RtIKxGSWVxEEf6oIk7a+te63jxPjs7NGXcpkLXUjGc9xz+w88smWLpO11SK1R9pQRh9rX2oKdHzY0PN3YyHOcWcFEP2p1TIiC8ffXb/jd/gMMIYGUWiiUGuLgWTYYDjOEPNPU9NCGjQrGjKnBRD90GCaiKPctW3a27ViB15tCESYFxKEGk2Awz+s909rWdMdyOgVqejAxhIvjIoqyqrz8cnf3nImT+n2+JA/TxYbVxUGDyczCwje6e+6aNSuiKBYsP/VAI8zMwglXe3tXz56TEnsdrCsOOmbQL4qrZs261ttXXlioWDKY6IdGmNyMjIsdHU21tdZfKGRRcailHEKCz3fozpUXO07keb16dhJYHxphEMM809j06He3+YNBOntszZZbsVnqblVF8QeDP96y9al9++jmEcv2oFGo7hWMT65d+/v7D3IIWTbCWE4cPMsGwmEWMc8euP/BdetkjBk0uPLPNgzudVCUXUuWXGjv+E5mpmjJ7drWEgcNJvmZ3lfaT+yprtbGxVmkdqYN0RYK4Zrp09/qO1kxebJgvQhjIXGoW5x9vtkTJ77dd7Jm+nRrjovHF1qiluXnX+vtW1NRIVjsxClLiIOOFAmiWD937rXevrL8AiuPi8cXWqJmeTwXjrcfXrlSlCSGscpj1Hxx0DFm0edrXn3XhePt49LT7VR+6oFW3ISQU3v2PrZjZyActkiEMVkcg8EkFPrZ9u1P7t7NaFucTVywYxZD27W76uv/dPgIrcpNX0hmpjg4bcaEQ+iFI0e769fIxrc424mh7dpbFy683NVdmJVleoQxTRzaUq5AQVbW5ZtnL9l736lO6HbtRVOm/PWBB9UTp3xmnjhljjhoMJlfVPzOyQcWl8Zhi7OdoBGmKDf3ak/vxsqFg7MwZqyATLY4BoOJIG6orLza0zO4k8Cq48dmQSNMZlramZaWY/X16iyMGREmqeKglabo8x1fs+ZMS2uWx+O0YKKfwQjDML/asfPx3XsCoVDyI0zyxEHP9/QHg0/s2fP4jh3IqcFEP0MR5vjq1Wda21zqEUVJjTBJEsdgNrt59pI6Y6IdCqu/p5zJUIRZX1Fxtad3Yk6OkMRZmGSIQzsU1j9h3Lg3e3o3zJtHz1EBZeiHlqjzi4re6TtZXVYmJGsvTMLFwWpHfy6aUvpWT++C4uKwLCOGUTD+xg8hRH9n2Z5v9w9CKKzIE3NyLnZ0bFm0qP/GjSQMFSJvS3Pi+ppFyB8K7V269OnGpiRcjHN45Ny5n5w/53a5EnpL8YnrUBahUDi8qnzW4dq6f376qbaUC33bINRTPhVleuH427yZhLHp9LwR/OHwB198wTLMt794hBis9eDmyspPrl//w9/e8Wh7x418vAES6xwMoy6s9YVCmM6YDHcZHMeFfNLzrW07Fy+J17FuKQrtpfc/+6zykYddHDf8d65t5ycMk+3xRBQloVeaQOeghGXZw/Oq5kdA3SzvdttmFeDYQQilud3ukcRxE7V6S3DcS7g4EELqHTCy9dEz3cbep3aC9snonZJoZahjsnbqUyC+gDiAEQFxACOS8JpjLNBTtvR/Ah1s1v/7cUd9OYu6l0LftID2vkErD/9YWhzqEeY6O9oasAixyT3IMKFYVBw08X/05ZePX3o9zeWKVrkzLFJXHFYUFR2tqxscU0ku9I+eee+9ix/8y5PmwUSdWRwFtcGh4PYl1XUzZpjSYD1YVByqGhD65Pr1UxcuMOnpTLS+ZliOGRhYWVV1tK6O/l89Fx9H6Bd85aN/nzp/nsnOZnC04SmWY0RxamEhiCNG3DzPZ2XRNUGjfwTHsiLLjcvIiPEvxYnMtDQ+O3tcZiZdkzAK6qsIGSbD7Y7TX04IFnUOCiFExljGOKo4CMPIWFFP/DEVTIisKLTNURsiK0rU6zIXM2t7wOJY2jnijqJ6UKwVCSF0dXTcW2VZHCSOuCxmtmyySAROEQf9Uv/+8cdn339PxiSGNEMIqZ0xY93cCqJZSCK+DKvhCHEohHAIPf+Pd/eePo0jETXoRos/w4DQY+fPP7x16w/Wb3CIf9hfHOrTRBsyOfzcc26e96SnRx1SGx5tlc1DL/2lZtr0O2fOtMcZZaNj//KKSuGDzz/3BYNpLlfkZtSkgdPAj6Kwquegd//7sRqzrfYMSAD2FweFboWI0TNuQrRPcM7mTaeII473uhM8Y/COSoAbATbB0gUpfes4fb3e6P3Nab9m+ggVixDPcXqeO+p1cZyVF3MwjLXFEZZlWZJuyHL05MmyzMCA4Pebe88OhEKyKF5nGCbq3ArLMqLoD4fNbfDoWNQ56C01Z9KkU0eOqIv0oz3n1d2CsjwlP9+UcyyG/uiuJdXlhRPUjWjRWqw2OBJZfvt0sxqsB4uKgw5BTsrJObyiVs9l3Iopw5dUzYtLSxeXlhptsGUfLhYVBwXWkJqLpcUBa0jNBaIsMCIgDgDEARgHnAMA5wCMA84BgHMAxgHnAMA5AOOAcwDgHIBxwDkAcA7AOOAcADgHYBxwDgCcAzAOOAcAzgEYB5wDAOcAjAPOAYBzAMZxinPE8QyvOH6UxXGKOGSMUTy+VhYhOepZ23bBKjve6KE5Ot5eFQuEYXK9XoKVMW6jZVmEZTk33TvU2lhaMzL01V1x/tAxYBXn4JAKz9F/4wnHsohhlk2dumHBAkEQYtYHi9ANSZpTVra1qgppb72MZys11KYixFnmHEurOEcgEvGHwwl6dSg9GfL0vvsOIXTpww9jeKcCfYt29bRpTzc2ed1uXyiUiK3xtJ3WObQj4e+V1QMhJCcjw+Ny6fnl2CCMak4el+uzr7/W6o9YKMrLI4Qk+p2dsqJcHxiIpX3xxhLOgRC6PjAQ9WynMUILmjSXKzZlMAzzn6++Yhh6/kcC351Nn1ljvNi4YAlx0BdXx+V6ohL1zJ1RSKi33cpYGhlHrCIOi3TH6KREI+OIVdIKYEFAHMCIgDgAEAdgHHAOAJwDMA44BwDOARgHnAMA5wCMA84BgHMAxgHnAMA5AOOAcwDgHIBxwDkAcA7AOOAcADgHYBxwDgCcAzAOOAcAzgEYB5wDAOcAjAPOAYBzAMYB5wDAOQDjgHMA4ByAccA5AHAOwDjgHAA4B2AccA5gRP4HIvjcZT7kLvcAAAAASUVORK5CYII=">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* Cadre de l'application. Le design des écrans est dans screens/ (inchangé). */
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #F4F7F7;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #12263A;
+}
+
+#app {
+  box-sizing: border-box;
+  max-width: 430px;
+  height: 100vh;
+  height: 100dvh;
+  margin: 0 auto;
+  padding-top: env(safe-area-inset-top, 0px);
+  background: #F4F7F7;
+  overflow: hidden;
+}
+
+#screen {
+  height: 100%;
+}
+
+/* La maquette est dessinée en 390 x 844 : sur un vrai téléphone, l'écran occupe toute la place. */
+#screen > div {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.app-error {
+  padding: 32px 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media (min-width: 431px) {
+  html, body { background: #E4EBEB; }
+  #app {
+    box-shadow: 0 0 0 1px #DCE3E6, 0 12px 40px rgba(18, 38, 58, 0.12);
+  }
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="screen" aria-live="polite"></div>
+</div>
+<noscript>Ivoire Résidences a besoin de JavaScript pour fonctionner.</noscript>
+<script>
+window.SCREENS = {"Main": "<!doctype html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"utf-8\">\n<title>Accueil et recherche<\/title>\n<script src=\"./support.js\"><\/script>\n<\/head>\n<body>\n<x-dc>\n<helmet>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap\">\n<style>\nbody{margin:0;font-family:'Inter',system-ui,sans-serif;color:#12263A}\na{color:inherit;text-decoration:none}\nbutton{font-family:inherit}\n<\/style>\n<\/helmet>\n<div style=\"width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F7F7; overflow: hidden\">\n<div style=\"flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 24px; padding: 28px 20px 24px\">\n<div style=\"display: flex; flex-direction: column; gap: 6px\">\n<span style=\"font-size: 13px; font-weight: 500; color: #5B6B75\">Abidjan, Côte d'Ivoire<\/span>\n<h1 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 30px; line-height: 1.15; font-weight: 700; color: #12263A\">Votre résidence meublée, réservée en quelques minutes<\/h1>\n<\/div>\n\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 14px\">\n<div style=\"display: flex; flex-direction: column; gap: 8px\">\n<span style=\"font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #5B6B75\">Quartier<\/span>\n<div style=\"display: flex; flex-wrap: wrap; gap: 8px\">\n<sc-for list=\"{{quartiers}}\" as=\"q\" hint-placeholder-count=\"5\">\n<button type=\"button\" onClick=\"{{ q.pick }}\" style=\"{{ q.style }}\">{{ q.label }}<\/button>\n<\/sc-for>\n<\/div>\n<\/div>\n\n<button type=\"button\" aria-pressed=\"{{ near }}\" onClick=\"{{ toggleNear }}\" style=\"{{ nearStyle }}\">\n<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0B6B6A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" style=\"flex-shrink: 0\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M12 2v4M12 18v4M2 12h4M18 12h4\"/><\/svg>\n<span style=\"display: flex; flex-direction: column; gap: 2px; text-align: left\">\n<span style=\"font-size: 15px; font-weight: 600; color: #12263A\">Autour de moi<\/span>\n<span style=\"font-size: 13px; color: #3F525C\">{{ nearNote }}<\/span>\n<\/span>\n<\/button>\n\n<div style=\"display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px\">\n<button type=\"button\" style=\"display: flex; flex-direction: column; align-items: flex-start; gap: 2px; min-height: 56px; padding: 10px 12px; border: 1px solid #DCE3E6; border-radius: 12px; background: #FFFFFF; cursor: pointer; text-align: left\">\n<span style=\"font-size: 12px; color: #5B6B75\">Arrivée<\/span>\n<span style=\"font-size: 15px; font-weight: 600; color: #12263A\">Ven. 20 nov.<\/span>\n<\/button>\n<button type=\"button\" style=\"display: flex; flex-direction: column; align-items: flex-start; gap: 2px; min-height: 56px; padding: 10px 12px; border: 1px solid #DCE3E6; border-radius: 12px; background: #FFFFFF; cursor: pointer; text-align: left\">\n<span style=\"font-size: 12px; color: #5B6B75\">Départ<\/span>\n<span style=\"font-size: 15px; font-weight: 600; color: #12263A\">Lun. 23 nov.<\/span>\n<\/button>\n<\/div>\n\n<div style=\"display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 4px 2px\">\n<div style=\"display: flex; flex-direction: column; gap: 2px\">\n<span style=\"font-size: 15px; font-weight: 600; color: #12263A\">Voyageurs<\/span>\n<span style=\"font-size: 13px; color: #5B6B75\">{{ guestsLabel }}<\/span>\n<\/div>\n<div style=\"display: flex; align-items: center; gap: 14px\">\n<button type=\"button\" aria-label=\"Retirer un voyageur\" onClick=\"{{ lessGuests }}\" style=\"width: 44px; height: 44px; border-radius: 22px; border: 1px solid #DCE3E6; background: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center\">\n<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#12263A\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><\/svg>\n<\/button>\n<span style=\"min-width: 20px; text-align: center; font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums\">{{ guests }}<\/span>\n<button type=\"button\" aria-label=\"Ajouter un voyageur\" onClick=\"{{ moreGuests }}\" style=\"width: 44px; height: 44px; border-radius: 22px; border: 1px solid #DCE3E6; background: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center\">\n<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#12263A\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/><\/svg>\n<\/button>\n<\/div>\n<\/div>\n\n<a href=\"{{ searchHref }}\" style=\"display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 14px; background: #0B6B6A; color: #FFFFFF; font-size: 16px; font-weight: 600\">Rechercher<\/a>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 14px\">\n<div style=\"display: flex; align-items: baseline; justify-content: space-between; gap: 12px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700\">Disponibles ce week-end<\/h2>\n<a href=\"Resultats.dc.html\" style=\"font-size: 14px; font-weight: 600; color: #0B6B6A\">Tout voir<\/a>\n<\/div>\n\n<sc-if value=\"{{ isEmpty }}\" hint-placeholder-val=\"{{ false }}\">\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px\">\n<span style=\"font-size: 16px; font-weight: 600\">{{ emptyTitle }}<\/span>\n<span style=\"font-size: 14px; color: #5B6B75; line-height: 1.5\">{{ emptyText }}<\/span>\n<\/div>\n<\/sc-if>\n\n<sc-for list=\"{{featured}}\" as=\"r\" hint-placeholder-count=\"3\">\n<a href=\"{{ r.href }}\" style=\"display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 16px; overflow: hidden\">\n<div style=\"{{ r.photoStyle }}\">\n<span style=\"font-size: 12px; font-weight: 600; color: #12263A; background: #FFFFFF; border-radius: 8px; padding: 4px 8px\">Photo à venir<\/span>\n<\/div>\n<div style=\"display: flex; flex-direction: column; gap: 6px; padding: 14px\">\n<div style=\"display: flex; justify-content: space-between; align-items: baseline; gap: 12px\">\n<span style=\"font-size: 16px; font-weight: 600\">{{ r.name }}<\/span>\n<span style=\"font-size: 13px; font-weight: 600; color: #8A5A00; white-space: nowrap\">{{ r.badge }}<\/span>\n<\/div>\n<span style=\"font-size: 13px; color: #5B6B75\">{{ r.sub }}<\/span>\n<span style=\"font-size: 15px; font-variant-numeric: tabular-nums\"><b>{{ r.price }} FCFA<\/b> <span style=\"color: #5B6B75\">par jour (24 h)<\/span><\/span>\n<\/div>\n<\/a>\n<\/sc-for>\n<\/div>\n<\/div>\n\n<nav aria-label=\"Navigation principale\" style=\"display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: #FFFFFF; border-top: 1px solid #DCE3E6; padding: 6px 8px 10px\">\n<a href=\"Main.dc.html\" style=\"display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 48px; font-size: 11px; font-weight: 600; color: #0B6B6A\">\n<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0B6B6A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"M20 20l-4-4\"/><\/svg>\nExplorer\n<\/a>\n<a href=\"Resultats.dc.html\" style=\"display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 48px; font-size: 11px; font-weight: 500; color: #5B6B75\">\n<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#5B6B75\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z\"/><\/svg>\nFavoris\n<\/a>\n<a href=\"Reservation.dc.html\" style=\"display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 48px; font-size: 11px; font-weight: 500; color: #5B6B75\">\n<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#5B6B75\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"4\" y=\"5\" width=\"16\" height=\"15\" rx=\"2\"/><path d=\"M4 10h16M9 3v4M15 3v4\"/><\/svg>\nRéservations\n<\/a>\n<a href=\"Compte.dc.html\" style=\"display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 48px; font-size: 11px; font-weight: 500; color: #5B6B75\">\n<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#5B6B75\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 21c1-4 4-6 8-6s7 2 8 6\"/><\/svg>\nProfil\n<\/a>\n<\/nav>\n<\/div>\n<\/x-dc>\n<script type=\"text/x-dc\" data-dc-script data-props='{\"$preview\":{\"width\":390,\"height\":844}}'>\nclass Component extends DCLogic {\n  constructor(props) {\n    super(props);\n    this.state = { quartier: 'Cocody', guests: 2, near: false, list: [], loading: true, error: '' };\n  }\n  componentDidMount() {\n    window.IvoireAPI.listResidences()\n      .then((list) => this.setState({ list: list || [], loading: false }))\n      .catch((e) => this.setState({ loading: false, error: (e && e.message) || 'Erreur' }));\n  }\n  renderVals() {\n    const api = window.IvoireAPI;\n    const st = this.state;\n    const names = ['Cocody', 'Marcory', 'Plateau', 'Riviera', 'Bingerville'];\n    const on = 'min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #0B6B6A; background: #0B6B6A; color: #FFFFFF; font-size: 14px; font-weight: 600; cursor: pointer';\n    const off = 'min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #DCE3E6; background: #FFFFFF; color: #12263A; font-size: 14px; font-weight: 500; cursor: pointer';\n    const grads = ['linear-gradient(135deg, #BFD9D6, #8FB7B3)', 'linear-gradient(135deg, #D9E2EC, #A9BBCC)', 'linear-gradient(135deg, #CFE3D4, #9CC3A6)'];\n    const g = st.guests;\n    const featured = st.list.slice(0, 3).map((r, i) => ({\n      href: 'Fiche.dc.html?id=' + r.id,\n      name: r.name,\n      badge: r.rooms === 0 ? 'Studio' : r.rooms + (r.rooms > 1 ? ' chambres' : ' chambre'),\n      sub: [r.quarter].concat((r.equipments || []).slice(0, 3)).join(' · '),\n      price: api.fmt(r.price_per_day),\n      photoStyle: 'height: 150px; display: flex; align-items: flex-end; padding: 12px; background: ' + grads[i % 3]\n    }));\n    return {\n      quartiers: names.map((n) => ({\n        label: n,\n        style: st.quartier === n ? on : off,\n        pick: () => this.setState({ quartier: n })\n      })),\n      near: st.near,\n      nearNote: st.near ? 'Position activée, résultats triés par distance' : 'Activer ma position pour voir les logements proches',\n      nearStyle: 'min-height: 64px; display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-radius: 12px; cursor: pointer; border: ' + (st.near ? '2px solid #0B6B6A; background: #DCEFEE' : '1px solid #DCE3E6; background: #FFFFFF'),\n      toggleNear: () => this.setState({ near: !st.near }),\n      guests: g,\n      guestsLabel: g === 1 ? '1 personne' : g + ' personnes',\n      lessGuests: () => this.setState({ guests: Math.max(1, g - 1) }),\n      moreGuests: () => this.setState({ guests: Math.min(12, g + 1) }),\n      searchHref: 'Resultats.dc.html?q=' + encodeURIComponent(st.quartier) + '&g=' + g + (st.near ? '&near=1' : ''),\n      featured: featured,\n      isEmpty: st.loading || !!st.error || featured.length === 0,\n      emptyTitle: st.loading ? 'Chargement des résidences…' : st.error ? 'Impossible de charger les résidences' : 'Aucune résidence pour le moment',\n      emptyText: st.loading ? '' : st.error ? st.error : 'Les premières résidences arrivent bientôt. Revenez dans quelques jours.'\n    };\n  }\n}\n<\/script>\n<\/body>\n<\/html>\n", "Resultats": "<!doctype html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"utf-8\">\n<title>Résultats de recherche<\/title>\n<script src=\"./support.js\"><\/script>\n<\/head>\n<body>\n<x-dc>\n<helmet>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap\">\n<style>\nbody{margin:0;font-family:'Inter',system-ui,sans-serif;color:#12263A}\na{color:inherit;text-decoration:none}\nbutton{font-family:inherit}\n<\/style>\n<\/helmet>\n<div style=\"width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F7F7; overflow: hidden\">\n<div style=\"display: flex; flex-direction: column; gap: 12px; padding: 20px 20px 14px; background: #FFFFFF; border-bottom: 1px solid #DCE3E6\">\n<div style=\"display: flex; align-items: center; gap: 12px\">\n<a href=\"Main.dc.html\" aria-label=\"Retour à la recherche\" style=\"width: 44px; height: 44px; border-radius: 22px; border: 1px solid #DCE3E6; display: flex; align-items: center; justify-content: center\">\n<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#12263A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 5l-7 7 7 7\"/><\/svg>\n<\/a>\n<div style=\"display: flex; flex-direction: column; gap: 2px; min-width: 0\">\n<h1 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700\">{{ title }}<\/h1>\n<span style=\"font-size: 13px; color: #5B6B75\">{{ subtitle }}<\/span>\n<\/div>\n<\/div>\n<div style=\"display: flex; flex-wrap: wrap; gap: 8px\">\n<sc-for list=\"{{filters}}\" as=\"f\" hint-placeholder-count=\"4\">\n<button type=\"button\" aria-pressed=\"{{ f.pressed }}\" onClick=\"{{ f.toggle }}\" style=\"{{ f.style }}\">{{ f.label }}<\/button>\n<\/sc-for>\n<\/div>\n<\/div>\n\n<div style=\"flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 14px; padding: 16px 20px 24px\">\n<span style=\"font-size: 13px; font-weight: 600; color: #5B6B75\">{{ countLabel }}<\/span>\n\n<sc-if value=\"{{ isEmpty }}\" hint-placeholder-val=\"{{ false }}\">\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px\">\n<span style=\"font-size: 16px; font-weight: 600\">{{ emptyTitle }}<\/span>\n<span style=\"font-size: 14px; color: #5B6B75; line-height: 1.5\">{{ emptyText }}<\/span>\n<\/div>\n<\/sc-if>\n\n<sc-for list=\"{{results}}\" as=\"r\" hint-placeholder-count=\"3\">\n<a href=\"{{ r.href }}\" style=\"display: flex; gap: 12px; background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 16px; padding: 10px\">\n<div style=\"{{ r.photoStyle }}\">\n<span style=\"font-size: 11px; font-weight: 600; color: #12263A; background: #FFFFFF; border-radius: 6px; padding: 2px 6px\">Photo<\/span>\n<\/div>\n<div style=\"flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; padding: 2px 4px 2px 0\">\n<span style=\"font-size: 12px; color: #5B6B75\">{{ r.area }}<\/span>\n<span style=\"font-size: 15px; font-weight: 600; line-height: 1.3\">{{ r.name }}<\/span>\n<span style=\"font-size: 12px; color: #5B6B75\">{{ r.tags }}<\/span>\n<div style=\"display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-top: auto\">\n<span style=\"font-size: 12px; font-weight: 600; color: #8A5A00\">{{ r.rating }}<\/span>\n<span style=\"font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums\">{{ r.price }} FCFA / jour<\/span>\n<\/div>\n<span style=\"font-size: 12px; color: #5B6B75; text-align: right; font-variant-numeric: tabular-nums\">{{ r.total }} FCFA pour 3 jours<\/span>\n<\/div>\n<\/a>\n<\/sc-for>\n<\/div>\n<\/div>\n<\/x-dc>\n<script type=\"text/x-dc\" data-dc-script data-props='{\"$preview\":{\"width\":390,\"height\":844}}'>\nclass Component extends DCLogic {\n  constructor(props) {\n    super(props);\n    this.state = { on: {}, near: props.near === '1', pos: null, geoError: '', list: [], loading: true, error: '' };\n  }\n  componentDidMount() {\n    window.IvoireAPI.listResidences()\n      .then((list) => this.setState({ list: list || [], loading: false }))\n      .catch((e) => this.setState({ loading: false, error: (e && e.message) || 'Erreur' }));\n    if (this.state.near) this.askPosition();\n  }\n  askPosition() {\n    window.IvoireAPI.locate()\n      .then((p) => this.setState({ pos: p, geoError: '' }))\n      .catch((e) => this.setState({ near: false, geoError: e.message }));\n  }\n  toggleNear() {\n    if (this.state.near) { this.setState({ near: false }); return; }\n    this.setState({ near: true, geoError: '' });\n    if (!this.state.pos) this.askPosition();\n  }\n  renderVals() {\n    const st = this.state;\n    const api = window.IvoireAPI;\n    const names = ['Climatisation', 'Wi-Fi', 'Groupe électrogène', 'Piscine'];\n    const on = 'min-height: 44px; padding: 0 14px; border-radius: 22px; border: 1px solid #0B6B6A; background: #DCEFEE; color: #0B6B6A; font-size: 13px; font-weight: 600; cursor: pointer';\n    const off = 'min-height: 44px; padding: 0 14px; border-radius: 22px; border: 1px solid #DCE3E6; background: #FFFFFF; color: #12263A; font-size: 13px; font-weight: 500; cursor: pointer';\n    const grads = ['linear-gradient(135deg, #BFD9D6, #8FB7B3)', 'linear-gradient(135deg, #D9E2EC, #A9BBCC)', 'linear-gradient(135deg, #E3DCCB, #C4B795)', 'linear-gradient(135deg, #CFE3D4, #9CC3A6)'];\n    const q = this.props.q || '';\n    const guests = parseInt(this.props.g, 10) || 2;\n    const active = names.filter((n) => st.on[n]);\n    let shown = st.list\n      .filter((r) => (!q || r.quarter === q) && (r.max_guests || 2) >= guests && active.every((a) => (r.equipments || []).indexOf(a) >= 0))\n      .map((r) => ({\n        r: r,\n        km: st.near && st.pos && r.approx_lat != null && r.approx_lng != null\n          ? api.distanceKm(st.pos.lat, st.pos.lng, Number(r.approx_lat), Number(r.approx_lng)) : null\n      }));\n    if (st.near && st.pos) shown.sort((a, b) => (a.km == null ? 1e9 : a.km) - (b.km == null ? 1e9 : b.km));\n    const wait = st.loading;\n    let count = wait ? 'Chargement…' : shown.length + (shown.length > 1 ? ' logements disponibles' : ' logement disponible');\n    if (st.near && !st.pos && !st.geoError) count += ' · localisation en cours…';\n    if (st.geoError) count += ' · ' + st.geoError;\n    const noneAtAll = !wait && !st.error && st.list.length === 0;\n    return {\n      title: q ? q + ' et environs' : 'Résidences meublées',\n      subtitle: '20 – 23 nov. · 3 jours de 24 h · ' + guests + (guests > 1 ? ' personnes' : ' personne'),\n      filters: [{\n        label: 'Autour de moi',\n        pressed: st.near,\n        style: st.near ? on : off,\n        toggle: () => this.toggleNear()\n      }].concat(names.map((n) => ({\n        label: n,\n        pressed: !!st.on[n],\n        style: st.on[n] ? on : off,\n        toggle: () => this.setState({ on: Object.assign({}, st.on, { [n]: !st.on[n] }) })\n      }))),\n      countLabel: count,\n      isEmpty: wait || !!st.error || shown.length === 0,\n      emptyTitle: wait ? 'Chargement des résidences…' : st.error ? 'Impossible de charger les résidences' : noneAtAll ? 'Aucune résidence pour le moment' : 'Aucun logement ne correspond',\n      emptyText: wait ? '' : st.error ? st.error : noneAtAll ? 'Les premières résidences arrivent bientôt.' : 'Retirez un équipement pour voir plus de résidences disponibles sur ces dates.',\n      results: shown.map((s, i) => ({\n        href: 'Fiche.dc.html?id=' + s.r.id,\n        name: s.r.name,\n        area: s.r.quarter + (s.km != null ? ' · à ' + (s.km < 10 ? s.km.toFixed(1).replace('.', ',') : String(Math.round(s.km))) + ' km' : ''),\n        rating: s.r.rooms === 0 ? 'Studio' : s.r.rooms + (s.r.rooms > 1 ? ' chambres' : ' chambre'),\n        tags: (s.r.equipments || []).join(' · '),\n        price: api.fmt(s.r.price_per_day),\n        total: api.fmt(s.r.price_per_day * 3),\n        photoStyle: 'width: 104px; min-height: 132px; border-radius: 10px; display: flex; align-items: flex-end; padding: 8px; box-sizing: border-box; background: ' + grads[i % 4]\n      }))\n    };\n  }\n}\n<\/script>\n<\/body>\n<\/html>\n", "Fiche": "<!doctype html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"utf-8\">\n<title>Fiche du logement<\/title>\n<script src=\"./support.js\"><\/script>\n<\/head>\n<body>\n<x-dc>\n<helmet>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap\">\n<style>\nbody{margin:0;font-family:'Inter',system-ui,sans-serif;color:#12263A}\na{color:inherit;text-decoration:none}\nbutton{font-family:inherit}\n<\/style>\n<\/helmet>\n<div style=\"width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F7F7; overflow: hidden\">\n<div style=\"flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column\">\n<div style=\"height: 260px; background: linear-gradient(135deg, #BFD9D6, #8FB7B3); display: flex; flex-direction: column; justify-content: space-between; padding: 20px; box-sizing: border-box; flex-shrink: 0\">\n<div style=\"display: flex; justify-content: space-between\">\n<a href=\"Resultats.dc.html\" aria-label=\"Retour aux résultats\" style=\"width: 44px; height: 44px; border-radius: 22px; background: #FFFFFF; display: flex; align-items: center; justify-content: center\">\n<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#12263A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 5l-7 7 7 7\"/><\/svg>\n<\/a>\n<button type=\"button\" aria-label=\"{{ favLabel }}\" aria-pressed=\"{{ fav }}\" onClick=\"{{ toggleFav }}\" style=\"width: 44px; height: 44px; border-radius: 22px; border: none; background: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center\">\n<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"{{ favFill }}\" stroke=\"#0B6B6A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z\"/><\/svg>\n<\/button>\n<\/div>\n<span style=\"align-self: flex-start; font-size: 12px; font-weight: 600; color: #12263A; background: #FFFFFF; border-radius: 8px; padding: 4px 8px\">Photos à venir<\/span>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 22px; padding: 20px 20px 28px\">\n<div style=\"display: flex; flex-direction: column; gap: 6px\">\n<span style=\"font-size: 13px; color: #5B6B75\">{{ place }}<\/span>\n<h1 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.2; font-weight: 700\">{{ name }}<\/h1>\n<span style=\"font-size: 14px; color: #12263A\">{{ facts }}<\/span>\n<\/div>\n\n<div style=\"display: flex; align-items: center; gap: 12px; background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 14px\">\n<div style=\"width: 44px; height: 44px; border-radius: 22px; background: #DCEFEE; display: flex; align-items: center; justify-content: center; flex-shrink: 0\">\n<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0B6B6A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z\"/><path d=\"M9 12l2 2 4-4\"/><\/svg>\n<\/div>\n<div style=\"display: flex; flex-direction: column; gap: 2px; min-width: 0\">\n<span style=\"font-size: 15px; font-weight: 600\">Propriétaire vérifié<\/span>\n<span style=\"font-size: 13px; color: #5B6B75\">Pièce d'identité et logement contrôlés par l'équipe<\/span>\n<\/div>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 12px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700\">Équipements<\/h2>\n<div style=\"display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px\">\n<sc-for list=\"{{equipments}}\" as=\"e\" hint-placeholder-count=\"6\">\n<div style=\"display: flex; align-items: center; gap: 8px; font-size: 14px; background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 10px; padding: 10px 12px; min-width: 0\">\n<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0B6B6A\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" style=\"flex-shrink: 0\"><path d=\"M5 12l5 5 9-10\"/><\/svg>\n{{ e.label }}\n<\/div>\n<\/sc-for>\n<\/div>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 12px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700\">Emplacement<\/h2>\n<div role=\"img\" aria-label=\"Carte de la zone approximative du logement\" style=\"height: 160px; border-radius: 14px; border: 1px solid #DCE3E6; box-sizing: border-box; background-color: #E6EEEE; background-image: linear-gradient(#D3DEDE 1px, transparent 1px), linear-gradient(90deg, #D3DEDE 1px, transparent 1px); background-size: 28px 28px; display: flex; align-items: center; justify-content: center\">\n<div style=\"width: 84px; height: 84px; border-radius: 42px; background: rgba(11, 107, 106, 0.18); border: 2px solid #0B6B6A; display: flex; align-items: center; justify-content: center\">\n<svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"#0B6B6A\" stroke=\"#0B6B6A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z\"/><circle cx=\"12\" cy=\"10\" r=\"2.5\" fill=\"#FFFFFF\"/><\/svg>\n<\/div>\n<\/div>\n<span style=\"font-size: 13px; color: #5B6B75; line-height: 1.5\">Zone approximative. L'adresse exacte et le repère d'accès sont envoyés après le paiement.<\/span>\n<div style=\"display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px\">\n<a href=\"{{ mapHref }}\" target=\"_blank\" rel=\"noopener\" style=\"min-height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 12px; border: 1px solid #DCE3E6; background: #FFFFFF; color: #12263A; font-size: 14px; font-weight: 600\">Voir sur la carte<\/a>\n<a href=\"{{ routeHref }}\" target=\"_blank\" rel=\"noopener\" style=\"min-height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 12px; border: 1px solid #0B6B6A; background: #DCEFEE; color: #0B6B6A; font-size: 14px; font-weight: 600\">Itinéraire<\/a>\n<\/div>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 12px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700\">Règles du séjour<\/h2>\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; display: flex; flex-direction: column\">\n<div style=\"display: flex; justify-content: space-between; gap: 12px; padding: 12px 14px; border-bottom: 1px solid #DCE3E6; font-size: 14px\"><span style=\"color: #5B6B75\">Arrivée<\/span><span style=\"font-weight: 600\">à partir de 14 h<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px; padding: 12px 14px; border-bottom: 1px solid #DCE3E6; font-size: 14px\"><span style=\"color: #5B6B75\">Départ<\/span><span style=\"font-weight: 600\">avant 11 h<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px; padding: 12px 14px; border-bottom: 1px solid #DCE3E6; font-size: 14px\"><span style=\"color: #5B6B75\">Annulation<\/span><span style=\"font-weight: 600; text-align: right\">gratuite jusqu'à 48 h avant<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px; padding: 12px 14px; font-size: 14px\"><span style=\"color: #5B6B75\">Fêtes et fumeurs<\/span><span style=\"font-weight: 600\">non autorisés<\/span><\/div>\n<\/div>\n<\/div>\n<\/div>\n<\/div>\n\n<div style=\"display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 20px 22px; background: #FFFFFF; border-top: 1px solid #DCE3E6\">\n<div style=\"display: flex; flex-direction: column; gap: 2px\">\n<span style=\"font-size: 18px; font-weight: 700; font-variant-numeric: tabular-nums\">{{ price }}<\/span>\n<span style=\"font-size: 12px; color: #5B6B75\">par jour (24 h) · 20 – 23 nov.<\/span>\n<\/div>\n<a href=\"{{ bookHref }}\" style=\"display: flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border-radius: 14px; background: #0B6B6A; color: #FFFFFF; font-size: 16px; font-weight: 600\">Réserver<\/a>\n<\/div>\n<\/div>\n<\/x-dc>\n<script type=\"text/x-dc\" data-dc-script data-props='{\"$preview\":{\"width\":390,\"height\":844}}'>\nclass Component extends DCLogic {\n  constructor(props) {\n    super(props);\n    this.state = { fav: false, res: null, loading: true };\n  }\n  componentDidMount() {\n    window.IvoireAPI.getResidence(this.props.id)\n      .then((res) => this.setState({ res: res, loading: false }))\n      .catch(() => this.setState({ loading: false }));\n  }\n  renderVals() {\n    const api = window.IvoireAPI;\n    const f = this.state.fav;\n    const r = this.state.res;\n    const hasPos = r && r.approx_lat != null && r.approx_lng != null;\n    const spot = hasPos ? r.approx_lat + ',' + r.approx_lng : encodeURIComponent(((r && r.quarter) || 'Cocody') + ', Abidjan');\n    return {\n      fav: f,\n      favLabel: f ? 'Retirer des favoris' : 'Ajouter aux favoris',\n      favFill: f ? '#0B6B6A' : 'none',\n      toggleFav: () => this.setState({ fav: !f }),\n      place: r ? r.quarter + ' · Abidjan' : 'Abidjan',\n      name: this.state.loading ? 'Chargement…' : r ? r.name : 'Résidence introuvable',\n      facts: r ? r.max_guests + ' voyageurs · ' + (r.rooms === 0 ? 'studio' : r.rooms + (r.rooms > 1 ? ' chambres' : ' chambre')) : '',\n      equipments: (r && r.equipments ? r.equipments : []).map((e) => ({ label: e })),\n      price: r ? api.fmt(r.price_per_day) + ' FCFA' : '—',\n      bookHref: r ? 'Reservation.dc.html?id=' + r.id : 'Resultats.dc.html',\n      mapHref: 'https://www.google.com/maps/search/?api=1&query=' + spot,\n      routeHref: 'https://www.google.com/maps/dir/?api=1&destination=' + spot\n    };\n  }\n}\n<\/script>\n<\/body>\n<\/html>\n", "Reservation": "<!doctype html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"utf-8\">\n<title>Réservation et paiement<\/title>\n<script src=\"./support.js\"><\/script>\n<\/head>\n<body>\n<x-dc>\n<helmet>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap\">\n<style>\nbody{margin:0;font-family:'Inter',system-ui,sans-serif;color:#12263A}\na{color:inherit;text-decoration:none}\nbutton,input{font-family:inherit}\n<\/style>\n<\/helmet>\n<div style=\"width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F7F7; overflow: hidden\">\n\n<sc-if value=\"{{ isPay }}\" hint-placeholder-val=\"{{ true }}\">\n<div style=\"display: flex; align-items: center; gap: 12px; padding: 20px 20px 14px; background: #FFFFFF; border-bottom: 1px solid #DCE3E6\">\n<a href=\"Fiche.dc.html\" aria-label=\"Retour à la fiche\" style=\"width: 44px; height: 44px; border-radius: 22px; border: 1px solid #DCE3E6; display: flex; align-items: center; justify-content: center\">\n<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#12263A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 5l-7 7 7 7\"/><\/svg>\n<\/a>\n<h1 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700\">Confirmer et payer<\/h1>\n<\/div>\n\n<div style=\"flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; padding: 18px 20px 24px\">\n<div style=\"display: flex; gap: 12px; background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 10px\">\n<div style=\"width: 76px; height: 76px; border-radius: 10px; background: linear-gradient(135deg, #BFD9D6, #8FB7B3); flex-shrink: 0\"><\/div>\n<div style=\"display: flex; flex-direction: column; gap: 3px; min-width: 0; justify-content: center\">\n<span style=\"font-size: 15px; font-weight: 600\">Studio meublé, Angré 8e tranche<\/span>\n<span style=\"font-size: 13px; color: #5B6B75\">20 – 23 nov. · 3 jours de 24 h · 2 personnes<\/span>\n<\/div>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 10px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700\">Moyen de paiement<\/h2>\n<div style=\"display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px\">\n<sc-for list=\"{{methods}}\" as=\"m\" hint-placeholder-count=\"4\">\n<button type=\"button\" aria-pressed=\"{{ m.pressed }}\" onClick=\"{{ m.pick }}\" style=\"{{ m.style }}\">{{ m.label }}<\/button>\n<\/sc-for>\n<\/div>\n<div style=\"display: flex; flex-direction: column; gap: 6px\">\n<label for=\"tel\" style=\"font-size: 13px; font-weight: 600; color: #12263A\">{{ fieldLabel }}<\/label>\n<input id=\"tel\" type=\"tel\" inputmode=\"numeric\" placeholder=\"{{ fieldHint }}\" style=\"min-height: 48px; box-sizing: border-box; border: 1px solid #5B6B75; border-radius: 12px; padding: 0 14px; font-size: 16px; background: #FFFFFF; color: #12263A\">\n<\/div>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 10px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700\">Détail du prix<\/h2>\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 10px; font-size: 14px; font-variant-numeric: tabular-nums\">\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span>25 000 FCFA × 3 jours<\/span><span>75 000 FCFA<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span>Frais de service (5 %)<\/span><span>3 750 FCFA<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px; padding-top: 10px; border-top: 1px solid #DCE3E6; font-size: 16px; font-weight: 700\"><span>Total<\/span><span>78 750 FCFA<\/span><\/div>\n<span style=\"font-size: 12px; color: #5B6B75; line-height: 1.5\">Caution de 50 000 FCFA à remettre à l'arrivée, rendue au départ. Annulation gratuite jusqu'à 48 h avant.<\/span>\n<\/div>\n<\/div>\n<\/div>\n\n<div style=\"padding: 12px 20px 22px; background: #FFFFFF; border-top: 1px solid #DCE3E6\">\n<button type=\"button\" onClick=\"{{ pay }}\" style=\"width: 100%; min-height: 52px; border: none; border-radius: 14px; background: #0B6B6A; color: #FFFFFF; font-size: 16px; font-weight: 600; cursor: pointer\">Payer 78 750 FCFA<\/button>\n<\/div>\n<\/sc-if>\n\n<sc-if value=\"{{ isDone }}\" hint-placeholder-val=\"{{ false }}\">\n<div style=\"flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 22px; padding: 56px 20px 24px\">\n<div style=\"width: 64px; height: 64px; border-radius: 32px; background: #DCEFEE; display: flex; align-items: center; justify-content: center\">\n<svg width=\"30\" height=\"30\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0B6B6A\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12l5 5 9-10\"/><\/svg>\n<\/div>\n<div style=\"display: flex; flex-direction: column; gap: 8px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 28px; line-height: 1.2; font-weight: 700\">Réservation confirmée<\/h2>\n<p style=\"margin: 0; font-size: 15px; line-height: 1.5; color: #5B6B75\">Un SMS et un message WhatsApp avec l'adresse exacte et les instructions d'arrivée vous ont été envoyés.<\/p>\n<\/div>\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 10px; font-size: 14px\">\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Logement<\/span><span style=\"font-weight: 600; text-align: right\">Studio meublé, Angré 8e tranche<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Séjour<\/span><span style=\"font-weight: 600\">20 – 23 nov.<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Payé avec<\/span><span style=\"font-weight: 600\">{{ methodName }}<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px; font-variant-numeric: tabular-nums\"><span style=\"color: #5B6B75\">Montant<\/span><span style=\"font-weight: 600\">78 750 FCFA<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Référence<\/span><span style=\"font-weight: 600\">[RÉFÉRENCE GÉNÉRÉE]<\/span><\/div>\n<\/div>\n<a href=\"Main.dc.html\" style=\"display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 14px; background: #0B6B6A; color: #FFFFFF; font-size: 16px; font-weight: 600\">Retour à l'accueil<\/a>\n<\/div>\n<\/sc-if>\n<\/div>\n<\/x-dc>\n<script type=\"text/x-dc\" data-dc-script data-props='{\"$preview\":{\"width\":390,\"height\":844}}'>\nclass Component extends DCLogic {\n  constructor(props) {\n    super(props);\n    this.state = { step: 'pay', method: 'Wave' };\n  }\n  renderVals() {\n    const names = ['Wave', 'Orange Money', 'MTN MoMo', 'Carte bancaire'];\n    const on = 'min-height: 52px; border-radius: 12px; border: 2px solid #0B6B6A; background: #DCEFEE; color: #0B6B6A; font-size: 14px; font-weight: 600; cursor: pointer';\n    const off = 'min-height: 52px; border-radius: 12px; border: 1px solid #DCE3E6; background: #FFFFFF; color: #12263A; font-size: 14px; font-weight: 500; cursor: pointer';\n    const m = this.state.method;\n    const card = m === 'Carte bancaire';\n    return {\n      isPay: this.state.step === 'pay',\n      isDone: this.state.step === 'done',\n      methods: names.map((n) => ({\n        label: n,\n        pressed: m === n,\n        style: m === n ? on : off,\n        pick: () => this.setState({ method: n })\n      })),\n      fieldLabel: card ? 'Numéro de carte' : 'Numéro ' + m,\n      fieldHint: card ? '0000 0000 0000 0000' : '07 00 00 00 00',\n      methodName: m,\n      pay: () => this.setState({ step: 'done' })\n    };\n  }\n}\n<\/script>\n<\/body>\n<\/html>\n", "Proprietaire": "<!doctype html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"utf-8\">\n<title>Espace propriétaire<\/title>\n<script src=\"./support.js\"><\/script>\n<\/head>\n<body>\n<x-dc>\n<helmet>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap\">\n<style>\nbody{margin:0;font-family:'Inter',system-ui,sans-serif;color:#12263A}\na{color:inherit;text-decoration:none}\nbutton{font-family:inherit}\n<\/style>\n<\/helmet>\n<div style=\"width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F7F7; overflow: hidden\">\n<div style=\"display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 20px 20px 14px; background: #FFFFFF; border-bottom: 1px solid #DCE3E6\">\n<h1 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700\">Espace propriétaire<\/h1>\n<a href=\"Main.dc.html\" style=\"display: flex; align-items: center; min-height: 44px; font-size: 14px; font-weight: 600; color: #0B6B6A\">Voir le site<\/a>\n<\/div>\n\n<div style=\"flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 22px; padding: 18px 20px 24px\">\n\n<div style=\"background: #12263A; color: #FFFFFF; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 12px\">\n<div style=\"display: flex; justify-content: space-between; align-items: center; gap: 12px\">\n<span style=\"font-size: 13px; font-weight: 600; color: #BFD9D6\">{{ subLabel }}<\/span>\n<span style=\"font-size: 12px; font-weight: 600; color: #12263A; background: #BFD9D6; border-radius: 8px; padding: 4px 8px\">{{ subBadge }}<\/span>\n<\/div>\n<span style=\"font-size: 15px; line-height: 1.4\">{{ subText }}<\/span>\n<a href=\"Abonnement.dc.html\" style=\"display: flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 12px; background: #FFFFFF; color: #12263A; font-size: 15px; font-weight: 600\">{{ subCta }}<\/a>\n<\/div>\n\n<div style=\"display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px\">\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 4px\">\n<span style=\"font-size: 12px; color: #5B6B75\">{{ revenueLabel }}<\/span>\n<span style=\"font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums\">{{ revenue }}<\/span>\n<\/div>\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 4px\">\n<span style=\"font-size: 12px; color: #5B6B75\">Réservations à venir<\/span>\n<span style=\"font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums\">{{ upcomingCount }}<\/span>\n<\/div>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 12px\">\n<div style=\"display: flex; align-items: center; justify-content: space-between; gap: 12px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700\">Mes résidences<\/h2>\n<a href=\"Ajouter.dc.html\" style=\"display: flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 22px; background: #0B6B6A; color: #FFFFFF; font-size: 14px; font-weight: 600\">Ajouter<\/a>\n<\/div>\n\n<sc-if value=\"{{ hasError }}\" hint-placeholder-val=\"{{ false }}\">\n<div role=\"alert\" style=\"background: #FDECEA; color: #8A1C12; border-radius: 12px; padding: 12px 14px; font-size: 14px; line-height: 1.4\">{{ error }}<\/div>\n<\/sc-if>\n<sc-if value=\"{{ noHomes }}\" hint-placeholder-val=\"{{ false }}\">\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 16px; font-size: 14px; line-height: 1.5; color: #5B6B75\">{{ noHomesText }}<\/div>\n<\/sc-if>\n<sc-for list=\"{{homes}}\" as=\"h\" hint-placeholder-count=\"2\">\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 12px; display: flex; flex-direction: column; gap: 12px\">\n<div style=\"display: flex; gap: 12px\">\n<div style=\"{{ h.photoStyle }}\"><\/div>\n<div style=\"display: flex; flex-direction: column; gap: 3px; min-width: 0; justify-content: center\">\n<span style=\"font-size: 15px; font-weight: 600; line-height: 1.3\">{{ h.name }}<\/span>\n<span style=\"font-size: 13px; color: #5B6B75\">{{ h.area }}<\/span>\n<span style=\"font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums\">{{ h.price }} FCFA par jour (24 h)<\/span>\n<\/div>\n<\/div>\n<div style=\"display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 10px; border-top: 1px solid #DCE3E6\">\n<span style=\"font-size: 14px; font-weight: 500\">{{ h.statusLabel }}<\/span>\n<sc-if value=\"{{ h.canToggle }}\" hint-placeholder-val=\"{{ true }}\">\n<button type=\"button\" role=\"switch\" aria-checked=\"{{ h.online }}\" aria-label=\"{{ h.switchLabel }}\" onClick=\"{{ h.toggle }}\" style=\"{{ h.trackStyle }}\">\n<span style=\"{{ h.knobStyle }}\"><span style=\"display: block; width: 22px; height: 22px; border-radius: 11px; background: #FFFFFF\"><\/span><\/span>\n<\/button>\n<\/sc-if>\n<\/div>\n<\/div>\n<\/sc-for>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 12px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700\">Prochaines réservations<\/h2>\n<sc-if value=\"{{ noBookings }}\" hint-placeholder-val=\"{{ false }}\">\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 16px; font-size: 14px; line-height: 1.5; color: #5B6B75\">Aucune réservation à venir pour le moment.<\/div>\n<\/sc-if>\n<sc-if value=\"{{ hasBookings }}\" hint-placeholder-val=\"{{ true }}\">\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; display: flex; flex-direction: column\">\n<sc-for list=\"{{bookings}}\" as=\"b\" hint-placeholder-count=\"2\">\n<div style=\"{{ b.rowStyle }}\">\n<div style=\"display: flex; flex-direction: column; gap: 3px; min-width: 0\">\n<span style=\"font-size: 15px; font-weight: 600\">{{ b.when }}<\/span>\n<span style=\"font-size: 13px; color: #5B6B75\">{{ b.name }}<\/span>\n<\/div>\n<div style=\"display: flex; flex-direction: column; align-items: flex-end; gap: 3px\">\n<span style=\"font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap\">{{ b.total }} FCFA<\/span>\n<span style=\"{{ b.statusStyle }}\">{{ b.status }}<\/span>\n<\/div>\n<\/div>\n<\/sc-for>\n<\/div>\n<\/sc-if>\n<\/div>\n<\/div>\n<\/div>\n<\/x-dc>\n<script type=\"text/x-dc\" data-dc-script data-props='{\"$preview\":{\"width\":390,\"height\":844}}'>\nclass Component extends DCLogic {\n  constructor(props) {\n    super(props);\n    this.state = { homes: [], bookings: [], sub: null, revenue: 0, loading: true, error: '' };\n  }\n  componentDidMount() {\n    const api = window.IvoireAPI;\n    api.myResidences().then((homes) => {\n      const ids = homes.map((h) => h.id);\n      return Promise.all([api.mySubscription(), api.ownerBookings(ids), api.ownerMonthRevenue(ids)])\n        .then((r) => this.setState({ homes: homes, sub: r[0], bookings: r[1] || [], revenue: r[2] || 0, loading: false, error: '' }));\n    }).catch((e) => this.setState({ loading: false, error: (e && e.message) || 'Erreur' }));\n  }\n  toggle(h) {\n    const next = h.status === 'online' ? 'hidden' : 'online';\n    this.setState({ error: '' });\n    window.IvoireAPI.setStatus(h.id, next)\n      .then(() => this.setState({ homes: this.state.homes.map((x) => (x.id === h.id ? Object.assign({}, x, { status: next }) : x)) }))\n      .catch((e) => this.setState({ error: (e && e.message) || 'Modification impossible.' }));\n  }\n  day(iso) {\n    const m = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];\n    const p = String(iso).split('-');\n    return parseInt(p[2], 10) + ' ' + m[parseInt(p[1], 10) - 1];\n  }\n  renderVals() {\n    const api = window.IvoireAPI;\n    const st = this.state;\n    const labels = { pending: 'En vérification', online: 'En ligne, réservable', hidden: 'Masquée, non réservable', rejected: 'Refusée' };\n    const grads = ['linear-gradient(135deg, #BFD9D6, #8FB7B3)', 'linear-gradient(135deg, #D9E2EC, #A9BBCC)', 'linear-gradient(135deg, #CFE3D4, #9CC3A6)'];\n    const months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];\n    const names = {};\n    st.homes.forEach((h) => { names[h.id] = h.name; });\n    const sub = st.sub;\n    return {\n      subLabel: sub ? 'Abonnement ' + (sub.plan === 'yearly' ? 'annuel' : 'mensuel') : 'Abonnement',\n      subBadge: sub ? 'Actif' : 'Aucun',\n      subText: sub ? 'Valable jusqu’au ' + (sub.current_period_end ? this.day(sub.current_period_end) : '—') : 'Choisissez une formule pour publier vos résidences.',\n      subCta: sub ? 'Gérer mon abonnement' : 'Choisir une formule',\n      revenueLabel: 'Revenus de ' + months[new Date().getMonth()],\n      revenue: api.fmt(st.revenue) + ' FCFA',\n      upcomingCount: st.bookings.length,\n      hasError: !!st.error,\n      error: st.error,\n      noHomes: !st.loading && !st.error && st.homes.length === 0,\n      noHomesText: 'Vous n’avez pas encore de résidence. Touchez Ajouter pour publier la première.',\n      homes: st.homes.map((h, i) => {\n        const online = h.status === 'online';\n        return {\n          name: h.name,\n          area: h.quarter,\n          price: api.fmt(h.price_per_day),\n          online: online,\n          statusLabel: labels[h.status] || h.status,\n          canToggle: !!h.approved && (h.status === 'online' || h.status === 'hidden'),\n          switchLabel: (online ? 'Masquer ' : 'Mettre en ligne ') + h.name,\n          toggle: () => this.toggle(h),\n          photoStyle: 'width: 76px; height: 76px; border-radius: 10px; flex-shrink: 0; background: ' + grads[i % 3],\n          trackStyle: 'width: 56px; height: 44px; border: none; background: transparent; padding: 0; cursor: pointer; display: flex; align-items: center; justify-content: center',\n          knobStyle: 'display: flex; align-items: center; width: 48px; height: 28px; padding: 3px; box-sizing: border-box; border-radius: 14px; justify-content: ' + (online ? 'flex-end' : 'flex-start') + '; background: ' + (online ? '#0B6B6A' : '#5B6B75')\n        };\n      }),\n      noBookings: !st.loading && !st.error && st.bookings.length === 0,\n      hasBookings: st.bookings.length > 0,\n      bookings: st.bookings.map((b, i) => ({\n        when: this.day(b.start_date) + ' – ' + this.day(b.end_date) + ' · ' + b.guests + (b.guests > 1 ? ' personnes' : ' personne'),\n        name: names[b.residence_id] || 'Résidence',\n        total: api.fmt(b.total),\n        status: b.status === 'confirmed' ? 'Payée' : 'À confirmer',\n        statusStyle: 'font-size: 12px; font-weight: 600; color: ' + (b.status === 'confirmed' ? '#0B6B6A' : '#8A5A00'),\n        rowStyle: 'display: flex; justify-content: space-between; gap: 12px; padding: 14px;' + (i > 0 ? ' border-top: 1px solid #DCE3E6' : '')\n      }))\n    };\n  }\n}\n<\/script>\n<\/body>\n<\/html>\n", "Ajouter": "<!doctype html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"utf-8\">\n<title>Ajouter une résidence<\/title>\n<script src=\"./support.js\"><\/script>\n<\/head>\n<body>\n<x-dc>\n<helmet>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap\">\n<style>\nbody{margin:0;font-family:'Inter',system-ui,sans-serif;color:#12263A}\na{color:inherit;text-decoration:none}\nbutton,input{font-family:inherit}\n<\/style>\n<\/helmet>\n<div style=\"width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F7F7; overflow: hidden\">\n\n<sc-if value=\"{{ isForm }}\" hint-placeholder-val=\"{{ true }}\">\n<div style=\"display: flex; align-items: center; gap: 12px; padding: 20px 20px 14px; background: #FFFFFF; border-bottom: 1px solid #DCE3E6\">\n<a href=\"Proprietaire.dc.html\" aria-label=\"Retour au tableau de bord\" style=\"width: 44px; height: 44px; border-radius: 22px; border: 1px solid #DCE3E6; display: flex; align-items: center; justify-content: center\">\n<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#12263A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 5l-7 7 7 7\"/><\/svg>\n<\/a>\n<h1 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700\">Ajouter une résidence<\/h1>\n<\/div>\n\n<div style=\"flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; padding: 18px 20px 24px\">\n<div style=\"display: flex; flex-direction: column; gap: 6px\">\n<label for=\"nom\" style=\"font-size: 13px; font-weight: 600\">Nom de l'annonce<\/label>\n<input id=\"nom\" type=\"text\" placeholder=\"Studio meublé, Cocody Angré\" style=\"min-height: 48px; box-sizing: border-box; border: 1px solid #5B6B75; border-radius: 12px; padding: 0 14px; font-size: 16px; background: #FFFFFF; color: #12263A\">\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 8px\">\n<span style=\"font-size: 13px; font-weight: 600\">Quartier<\/span>\n<div style=\"display: flex; flex-wrap: wrap; gap: 8px\">\n<sc-for list=\"{{quartiers}}\" as=\"q\" hint-placeholder-count=\"5\">\n<button type=\"button\" aria-pressed=\"{{ q.pressed }}\" onClick=\"{{ q.pick }}\" style=\"{{ q.style }}\">{{ q.label }}<\/button>\n<\/sc-for>\n<\/div>\n<\/div>\n\n<div style=\"display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px\">\n<div style=\"display: flex; flex-direction: column; gap: 6px; min-width: 0\">\n<span style=\"font-size: 13px; font-weight: 600\">Prix par jour (24 h)<\/span>\n<div style=\"min-height: 48px; box-sizing: border-box; display: flex; align-items: center; border: 1px solid #DCE3E6; border-radius: 12px; padding: 0 14px; font-size: 15px; font-weight: 600; background: #FFFFFF; font-variant-numeric: tabular-nums\">{{ priceLabel }}<\/div>\n<\/div>\n<div style=\"display: flex; flex-direction: column; gap: 6px; min-width: 0\">\n<span style=\"font-size: 13px; font-weight: 600\">Chambres<\/span>\n<div style=\"display: flex; align-items: center; justify-content: space-between; min-height: 48px; box-sizing: border-box; border: 1px solid #DCE3E6; border-radius: 12px; background: #FFFFFF; padding: 0 4px\">\n<button type=\"button\" aria-label=\"Moins de chambres\" onClick=\"{{ lessRooms }}\" style=\"width: 44px; height: 44px; border: none; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center\">\n<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#12263A\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><\/svg>\n<\/button>\n<span style=\"font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums\">{{ rooms }}<\/span>\n<button type=\"button\" aria-label=\"Plus de chambres\" onClick=\"{{ moreRooms }}\" style=\"width: 44px; height: 44px; border: none; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center\">\n<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#12263A\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/><\/svg>\n<\/button>\n<\/div>\n<\/div>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 8px\">\n<span style=\"font-size: 13px; font-weight: 600\">Tarif par jour de 24 h (FCFA)<\/span>\n<div style=\"display: flex; flex-wrap: wrap; gap: 8px\">\n<sc-for list=\"{{tariffs}}\" as=\"t\" hint-placeholder-count=\"6\">\n<button type=\"button\" aria-pressed=\"{{ t.pressed }}\" onClick=\"{{ t.pick }}\" style=\"{{ t.style }}\">{{ t.label }}<\/button>\n<\/sc-for>\n<\/div>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 8px\">\n<span style=\"font-size: 13px; font-weight: 600\">Équipements<\/span>\n<div style=\"display: flex; flex-wrap: wrap; gap: 8px\">\n<sc-for list=\"{{equipments}}\" as=\"e\" hint-placeholder-count=\"6\">\n<button type=\"button\" aria-pressed=\"{{ e.pressed }}\" onClick=\"{{ e.toggle }}\" style=\"{{ e.style }}\">{{ e.label }}<\/button>\n<\/sc-for>\n<\/div>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 10px\">\n<span style=\"font-size: 13px; font-weight: 600\">Localisation<\/span>\n<button type=\"button\" aria-pressed=\"{{ located }}\" onClick=\"{{ locate }}\" style=\"{{ locateStyle }}\">\n<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0B6B6A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" style=\"flex-shrink: 0\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M12 2v4M12 18v4M2 12h4M18 12h4\"/><\/svg>\n<span style=\"font-size: 15px; font-weight: 600; color: #12263A\">{{ locateLabel }}<\/span>\n<\/button>\n<sc-if value=\"{{ hasGeoError }}\" hint-placeholder-val=\"{{ false }}\">\n<span role=\"alert\" style=\"font-size: 13px; line-height: 1.4; color: #8A1C12\">{{ geoError }}<\/span>\n<\/sc-if>\n<div style=\"display: flex; flex-direction: column; gap: 6px\">\n<label for=\"repere\" style=\"font-size: 13px; font-weight: 600\">Adresse ou repère connu<\/label>\n<input id=\"repere\" type=\"text\" placeholder=\"Rue, immeuble, repère proche\" style=\"min-height: 48px; box-sizing: border-box; border: 1px solid #5B6B75; border-radius: 12px; padding: 0 14px; font-size: 16px; background: #FFFFFF; color: #12263A\">\n<\/div>\n<sc-if value=\"{{ located }}\" hint-placeholder-val=\"{{ false }}\">\n<div role=\"img\" aria-label=\"Carte avec la position de la résidence\" style=\"height: 140px; border-radius: 14px; border: 1px solid #DCE3E6; box-sizing: border-box; background-color: #E6EEEE; background-image: linear-gradient(#D3DEDE 1px, transparent 1px), linear-gradient(90deg, #D3DEDE 1px, transparent 1px); background-size: 28px 28px; display: flex; align-items: center; justify-content: center\">\n<svg width=\"34\" height=\"34\" viewBox=\"0 0 24 24\" fill=\"#0B6B6A\" stroke=\"#0B6B6A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z\"/><circle cx=\"12\" cy=\"10\" r=\"2.5\" fill=\"#FFFFFF\"/><\/svg>\n<\/div>\n<span style=\"font-size: 12px; color: #5B6B75\">{{ coordsNote }}<\/span>\n<\/sc-if>\n<span style=\"font-size: 12px; color: #5B6B75; line-height: 1.5\">Les voyageurs voient la zone approximative avant de réserver. L'adresse exacte leur est envoyée après le paiement.<\/span>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 8px\">\n<span style=\"font-size: 13px; font-weight: 600\">Photos<\/span>\n<div style=\"display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px\">\n<button type=\"button\" style=\"aspect-ratio: 1 / 1; max-width: 100%; border: 1.5px dashed #5B6B75; border-radius: 12px; background: #FFFFFF; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 12px; font-weight: 600; color: #12263A\">\n<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0B6B6A\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/><\/svg>\nAjouter\n<\/button>\n<div style=\"aspect-ratio: 1 / 1; max-width: 100%; border-radius: 12px; background: linear-gradient(135deg, #BFD9D6, #8FB7B3)\"><\/div>\n<div style=\"aspect-ratio: 1 / 1; max-width: 100%; border-radius: 12px; background: linear-gradient(135deg, #D9E2EC, #A9BBCC)\"><\/div>\n<\/div>\n<span style=\"font-size: 12px; color: #5B6B75; line-height: 1.5\">Au moins 5 photos nettes : salon, chambre, cuisine, salle d'eau, entrée.<\/span>\n<\/div>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 8px; padding: 12px 20px 22px; background: #FFFFFF; border-top: 1px solid #DCE3E6\">\n<sc-if value=\"{{ hasError }}\" hint-placeholder-val=\"{{ false }}\">\n<div role=\"alert\" style=\"background: #FDECEA; color: #8A1C12; border-radius: 12px; padding: 10px 12px; font-size: 13px; line-height: 1.4\">{{ error }}<\/div>\n<\/sc-if>\n<button type=\"button\" onClick=\"{{ publish }}\" style=\"{{ publishStyle }}\">{{ publishLabel }}<\/button>\n<span style=\"font-size: 12px; color: #5B6B75; text-align: center\">L'équipe contrôle chaque annonce avant sa mise en ligne.<\/span>\n<\/div>\n<\/sc-if>\n\n<sc-if value=\"{{ isDone }}\" hint-placeholder-val=\"{{ false }}\">\n<div style=\"flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 22px; padding: 56px 20px 24px\">\n<div style=\"width: 64px; height: 64px; border-radius: 32px; background: #DCEFEE; display: flex; align-items: center; justify-content: center\">\n<svg width=\"30\" height=\"30\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0B6B6A\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12l5 5 9-10\"/><\/svg>\n<\/div>\n<div style=\"display: flex; flex-direction: column; gap: 8px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 28px; line-height: 1.2; font-weight: 700\">Annonce envoyée<\/h2>\n<p style=\"margin: 0; font-size: 15px; line-height: 1.5; color: #5B6B75\">Nous vérifions vos informations. Votre résidence apparaîtra en ligne dès qu'elle sera validée, en général sous 24 heures.<\/p>\n<\/div>\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 10px; font-size: 14px\">\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Quartier<\/span><span style=\"font-weight: 600\">{{ quartierName }}<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Chambres<\/span><span style=\"font-weight: 600\">{{ rooms }}<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Équipements<\/span><span style=\"font-weight: 600; text-align: right\">{{ equipmentCount }}<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Prix par jour<\/span><span style=\"font-weight: 600; font-variant-numeric: tabular-nums\">{{ priceLabel }}<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Position<\/span><span style=\"font-weight: 600\">{{ locatedNote }}<\/span><\/div>\n<\/div>\n<a href=\"Proprietaire.dc.html\" style=\"display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 14px; background: #0B6B6A; color: #FFFFFF; font-size: 16px; font-weight: 600\">Retour au tableau de bord<\/a>\n<\/div>\n<\/sc-if>\n<\/div>\n<\/x-dc>\n<script type=\"text/x-dc\" data-dc-script data-props='{\"$preview\":{\"width\":390,\"height\":844}}'>\nclass Component extends DCLogic {\n  constructor(props) {\n    super(props);\n    this.state = {\n      step: 'form', quartier: 'Cocody', rooms: 1, eq: { 'Climatisation': true, 'Wi-Fi': true }, tariff: 25000,\n      located: false, locating: false, lat: null, lng: null, geoError: '', busy: false, error: ''\n    };\n  }\n  value(id) {\n    const el = document.getElementById(id);\n    return el ? el.value : '';\n  }\n  locate() {\n    if (this.state.located) { this.setState({ located: false, lat: null, lng: null }); return; }\n    this.setState({ locating: true, geoError: '' });\n    window.IvoireAPI.locate()\n      .then((p) => this.setState({ locating: false, located: true, lat: p.lat, lng: p.lng }))\n      .catch((e) => this.setState({ locating: false, geoError: e.message }));\n  }\n  publish() {\n    const st = this.state;\n    const equipments = ['Climatisation', 'Wi-Fi', 'Groupe électrogène', 'Cuisine équipée', 'Parking', 'Piscine'].filter((e) => st.eq[e]);\n    const name = this.value('nom').trim();\n    const address = this.value('repere').trim();\n    if (name.length < 3) { this.setState({ error: 'Donnez un nom à l’annonce (3 lettres minimum).' }); return; }\n    if (!st.located && !address) { this.setState({ error: 'Indiquez votre position ou une adresse, un repère connu.' }); return; }\n    const round = (v, d) => (v == null ? null : Math.round(v * Math.pow(10, d)) / Math.pow(10, d));\n    const residence = {\n      name: name,\n      quarter: st.quartier,\n      price_per_day: st.tariff,\n      rooms: st.rooms,\n      max_guests: Math.max(2, st.rooms * 2),\n      equipments: equipments,\n      approx_lat: round(st.lat, 3),\n      approx_lng: round(st.lng, 3)\n    };\n    const priv = { address: address || null, exact_lat: round(st.lat, 6), exact_lng: round(st.lng, 6) };\n    this.setState({ busy: true, error: '' });\n    window.IvoireAPI.createResidence(residence, priv)\n      .then(() => this.setState({ busy: false, step: 'done' }))\n      .catch((e) => this.setState({ busy: false, error: (e && e.message) || 'Envoi impossible. Réessayez.' }));\n  }\n  renderVals() {\n    const quartiers = ['Cocody', 'Marcory', 'Plateau', 'Riviera', 'Bingerville'];\n    const equipments = ['Climatisation', 'Wi-Fi', 'Groupe électrogène', 'Cuisine équipée', 'Parking', 'Piscine'];\n    const on = 'min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #0B6B6A; background: #0B6B6A; color: #FFFFFF; font-size: 14px; font-weight: 600; cursor: pointer';\n    const off = 'min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #DCE3E6; background: #FFFFFF; color: #12263A; font-size: 14px; font-weight: 500; cursor: pointer';\n    const eqOn = 'min-height: 44px; padding: 0 14px; border-radius: 22px; border: 1px solid #0B6B6A; background: #DCEFEE; color: #0B6B6A; font-size: 14px; font-weight: 600; cursor: pointer';\n    const n = equipments.filter((e) => this.state.eq[e]).length;\n    const f = (v) => String(v).replace(/\\B(?=(\\d{3})+(?!\\d))/g, ' ');\n    const st = this.state;\n    const loc = st.located;\n    const r = st.rooms;\n    return {\n      isForm: st.step === 'form',\n      isDone: st.step === 'done',\n      quartiers: quartiers.map((q) => ({\n        label: q,\n        pressed: st.quartier === q,\n        style: st.quartier === q ? on : off,\n        pick: () => this.setState({ quartier: q })\n      })),\n      equipments: equipments.map((e) => ({\n        label: e,\n        pressed: !!st.eq[e],\n        style: st.eq[e] ? eqOn : off,\n        toggle: () => this.setState({ eq: Object.assign({}, st.eq, { [e]: !st.eq[e] }) })\n      })),\n      tariffs: [15000, 20000, 25000, 30000, 40000, 45000].map((t) => ({\n        label: f(t),\n        pressed: st.tariff === t,\n        style: st.tariff === t ? on : off,\n        pick: () => this.setState({ tariff: t })\n      })),\n      priceLabel: f(st.tariff) + ' FCFA / jour',\n      located: loc,\n      locateLabel: st.locating ? 'Recherche de votre position…' : loc ? 'Position actuelle utilisée' : 'Utiliser ma position actuelle',\n      locateStyle: 'min-height: 52px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-radius: 12px; cursor: pointer; border: ' + (loc ? '2px solid #0B6B6A; background: #DCEFEE' : '1px solid #DCE3E6; background: #FFFFFF'),\n      locate: () => this.locate(),\n      hasGeoError: !!st.geoError,\n      geoError: st.geoError,\n      coordsNote: loc && st.lat != null ? 'Position enregistrée (' + st.lat.toFixed(4).replace('.', ',') + ' ; ' + st.lng.toFixed(4).replace('.', ',') + '). Touchez le bouton pour la retirer.' : '',\n      locatedNote: loc ? 'Enregistrée par GPS' : 'Adresse ou repère indiqué',\n      rooms: r,\n      lessRooms: () => this.setState({ rooms: Math.max(0, r - 1) }),\n      moreRooms: () => this.setState({ rooms: Math.min(10, r + 1) }),\n      quartierName: st.quartier,\n      equipmentCount: n === 1 ? '1 sélectionné' : n + ' sélectionnés',\n      hasError: !!st.error,\n      error: st.error,\n      publishLabel: st.busy ? 'Envoi en cours…' : 'Envoyer pour vérification',\n      publishStyle: 'width: 100%; min-height: 52px; border: none; border-radius: 14px; background: #0B6B6A; color: #FFFFFF; font-size: 16px; font-weight: 600; cursor: pointer; opacity: ' + (st.busy ? '0.6' : '1'),\n      publish: () => { if (!st.busy) this.publish(); }\n    };\n  }\n}\n<\/script>\n<\/body>\n<\/html>\n", "Abonnement": "<!doctype html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"utf-8\">\n<title>Abonnement propriétaire<\/title>\n<script src=\"./support.js\"><\/script>\n<\/head>\n<body>\n<x-dc>\n<helmet>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap\">\n<style>\nbody{margin:0;font-family:'Inter',system-ui,sans-serif;color:#12263A}\na{color:inherit;text-decoration:none}\nbutton,input{font-family:inherit}\n<\/style>\n<\/helmet>\n<div style=\"width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F7F7; overflow: hidden\">\n\n<sc-if value=\"{{ isPay }}\" hint-placeholder-val=\"{{ true }}\">\n<div style=\"display: flex; align-items: center; gap: 12px; padding: 20px 20px 14px; background: #FFFFFF; border-bottom: 1px solid #DCE3E6\">\n<a href=\"Proprietaire.dc.html\" aria-label=\"Retour au tableau de bord\" style=\"width: 44px; height: 44px; border-radius: 22px; border: 1px solid #DCE3E6; display: flex; align-items: center; justify-content: center\">\n<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#12263A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 5l-7 7 7 7\"/><\/svg>\n<\/a>\n<h1 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700\">Mon abonnement<\/h1>\n<\/div>\n\n<div style=\"flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; padding: 18px 20px 24px\">\n<div style=\"display: flex; flex-direction: column; gap: 10px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700\">Choisir ma formule<\/h2>\n<sc-for list=\"{{plans}}\" as=\"p\" hint-placeholder-count=\"2\">\n<button type=\"button\" aria-pressed=\"{{ p.pressed }}\" onClick=\"{{ p.pick }}\" style=\"{{ p.style }}\">\n<span style=\"display: flex; flex-direction: column; gap: 3px; text-align: left\">\n<span style=\"font-size: 16px; font-weight: 600\">{{ p.name }}<\/span>\n<span style=\"font-size: 13px; color: #5B6B75\">{{ p.note }}<\/span>\n<\/span>\n<span style=\"font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap\">{{ p.price }}<\/span>\n<\/button>\n<\/sc-for>\n<\/div>\n\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 10px\">\n<span style=\"font-size: 14px; font-weight: 600\">Inclus dans les deux formules<\/span>\n<sc-for list=\"{{perks}}\" as=\"k\" hint-placeholder-count=\"4\">\n<div style=\"display: flex; align-items: center; gap: 8px; font-size: 14px\">\n<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0B6B6A\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" style=\"flex-shrink: 0\"><path d=\"M5 12l5 5 9-10\"/><\/svg>\n{{ k.label }}\n<\/div>\n<\/sc-for>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 10px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700\">Moyen de paiement<\/h2>\n<div style=\"display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px\">\n<sc-for list=\"{{methods}}\" as=\"m\" hint-placeholder-count=\"4\">\n<button type=\"button\" aria-pressed=\"{{ m.pressed }}\" onClick=\"{{ m.pick }}\" style=\"{{ m.style }}\">{{ m.label }}<\/button>\n<\/sc-for>\n<\/div>\n<div style=\"display: flex; flex-direction: column; gap: 6px\">\n<label for=\"tel\" style=\"font-size: 13px; font-weight: 600\">{{ fieldLabel }}<\/label>\n<input id=\"tel\" type=\"tel\" inputmode=\"numeric\" placeholder=\"{{ fieldHint }}\" style=\"min-height: 48px; box-sizing: border-box; border: 1px solid #5B6B75; border-radius: 12px; padding: 0 14px; font-size: 16px; background: #FFFFFF; color: #12263A\">\n<\/div>\n<\/div>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 8px; padding: 12px 20px 22px; background: #FFFFFF; border-top: 1px solid #DCE3E6\">\n<button type=\"button\" onClick=\"{{ pay }}\" style=\"width: 100%; min-height: 52px; border: none; border-radius: 14px; background: #0B6B6A; color: #FFFFFF; font-size: 16px; font-weight: 600; cursor: pointer\">{{ payLabel }}<\/button>\n<span style=\"font-size: 12px; color: #5B6B75; text-align: center\">{{ renewNote }}<\/span>\n<\/div>\n<\/sc-if>\n\n<sc-if value=\"{{ isDone }}\" hint-placeholder-val=\"{{ false }}\">\n<div style=\"flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 22px; padding: 56px 20px 24px\">\n<div style=\"width: 64px; height: 64px; border-radius: 32px; background: #DCEFEE; display: flex; align-items: center; justify-content: center\">\n<svg width=\"30\" height=\"30\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0B6B6A\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12l5 5 9-10\"/><\/svg>\n<\/div>\n<div style=\"display: flex; flex-direction: column; gap: 8px\">\n<h2 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 28px; line-height: 1.2; font-weight: 700\">Abonnement activé<\/h2>\n<p style=\"margin: 0; font-size: 15px; line-height: 1.5; color: #5B6B75\">Vos résidences restent en ligne. Un reçu a été envoyé par SMS et par WhatsApp.<\/p>\n<\/div>\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 10px; font-size: 14px\">\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Formule<\/span><span style=\"font-weight: 600\">{{ planName }}<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Montant payé<\/span><span style=\"font-weight: 600; font-variant-numeric: tabular-nums\">{{ planPrice }}<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Payé avec<\/span><span style=\"font-weight: 600\">{{ methodName }}<\/span><\/div>\n<div style=\"display: flex; justify-content: space-between; gap: 12px\"><span style=\"color: #5B6B75\">Prochain paiement<\/span><span style=\"font-weight: 600\">{{ nextDate }}<\/span><\/div>\n<\/div>\n<a href=\"Proprietaire.dc.html\" style=\"display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 14px; background: #0B6B6A; color: #FFFFFF; font-size: 16px; font-weight: 600\">Retour au tableau de bord<\/a>\n<\/div>\n<\/sc-if>\n<\/div>\n<\/x-dc>\n<script type=\"text/x-dc\" data-dc-script data-props='{\"$preview\":{\"width\":390,\"height\":844}}'>\nclass Component extends DCLogic {\n  constructor(props) {\n    super(props);\n    this.state = { step: 'pay', plan: 'mensuel', method: 'Orange Money' };\n  }\n  renderVals() {\n    const monthly = 10000;\n    const f = (n) => String(n).replace(/\\B(?=(\\d{3})+(?!\\d))/g, ' ');\n    const defs = {\n      mensuel: { name: 'Mensuel', note: 'Sans engagement, résiliable à tout moment', price: f(monthly) + ' FCFA / mois', amount: f(monthly) + ' FCFA', next: '17 décembre 2026', renew: 'Renouvelé chaque mois, vous pouvez arrêter quand vous voulez.' },\n      annuel: { name: 'Annuel', note: '2 mois offerts, soit ' + f(monthly * 2) + ' FCFA économisés', price: f(monthly * 10) + ' FCFA / an', amount: f(monthly * 10) + ' FCFA', next: '17 novembre 2027', renew: 'Un seul paiement pour 12 mois.' }\n    };\n    const planOn = 'width: 100%; min-height: 76px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px; border-radius: 14px; border: 2px solid #0B6B6A; background: #DCEFEE; color: #12263A; cursor: pointer';\n    const planOff = 'width: 100%; min-height: 76px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px; border-radius: 14px; border: 1px solid #DCE3E6; background: #FFFFFF; color: #12263A; cursor: pointer';\n    const mOn = 'min-height: 52px; border-radius: 12px; border: 2px solid #0B6B6A; background: #DCEFEE; color: #0B6B6A; font-size: 14px; font-weight: 600; cursor: pointer';\n    const mOff = 'min-height: 52px; border-radius: 12px; border: 1px solid #DCE3E6; background: #FFFFFF; color: #12263A; font-size: 14px; font-weight: 500; cursor: pointer';\n    const d = defs[this.state.plan];\n    const m = this.state.method;\n    const card = m === 'Carte bancaire';\n    return {\n      isPay: this.state.step === 'pay',\n      isDone: this.state.step === 'done',\n      plans: ['mensuel', 'annuel'].map((k) => ({\n        name: defs[k].name,\n        note: defs[k].note,\n        price: defs[k].price,\n        pressed: this.state.plan === k,\n        style: this.state.plan === k ? planOn : planOff,\n        pick: () => this.setState({ plan: k })\n      })),\n      perks: [\n        { label: 'Annonces illimitées, avec photos et localisation' },\n        { label: 'Calendrier et réservations en ligne' },\n        { label: 'Paiements des voyageurs versés sur votre compte' },\n        { label: 'Assistance par WhatsApp' }\n      ],\n      methods: ['Wave', 'Orange Money', 'MTN MoMo', 'Carte bancaire'].map((n) => ({\n        label: n,\n        pressed: m === n,\n        style: m === n ? mOn : mOff,\n        pick: () => this.setState({ method: n })\n      })),\n      fieldLabel: card ? 'Numéro de carte' : 'Numéro ' + m,\n      fieldHint: card ? '0000 0000 0000 0000' : '07 00 00 00 00',\n      payLabel: 'Payer ' + d.amount,\n      renewNote: d.renew,\n      planName: d.name,\n      planPrice: d.amount,\n      methodName: m,\n      nextDate: d.next,\n      pay: () => this.setState({ step: 'done' })\n    };\n  }\n}\n<\/script>\n<\/body>\n<\/html>\n", "Connexion": "<!doctype html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"utf-8\">\n<title>Connexion<\/title>\n<script src=\"./support.js\"><\/script>\n<\/head>\n<body>\n<x-dc>\n<helmet>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap\">\n<style>\nbody{margin:0;font-family:'Inter',system-ui,sans-serif;color:#12263A}\na{color:inherit;text-decoration:none}\nbutton,input{font-family:inherit}\n<\/style>\n<\/helmet>\n<div style=\"width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F7F7; overflow: hidden\">\n<div style=\"display: flex; align-items: center; gap: 12px; padding: 20px 20px 14px; background: #FFFFFF; border-bottom: 1px solid #DCE3E6\">\n<a href=\"Main.dc.html\" aria-label=\"Retour à l'accueil\" style=\"width: 44px; height: 44px; border-radius: 22px; border: 1px solid #DCE3E6; display: flex; align-items: center; justify-content: center\">\n<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#12263A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 5l-7 7 7 7\"/><\/svg>\n<\/a>\n<h1 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700\">{{ title }}<\/h1>\n<\/div>\n\n<div style=\"flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; padding: 18px 20px 24px\">\n<p style=\"margin: 0; font-size: 15px; line-height: 1.5; color: #5B6B75\">{{ intro }}<\/p>\n\n<sc-if value=\"{{ isPhoneStep }}\" hint-placeholder-val=\"{{ true }}\">\n<div style=\"display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px\">\n<button type=\"button\" aria-pressed=\"{{ isLogin }}\" onClick=\"{{ pickLogin }}\" style=\"{{ loginStyle }}\">Connexion<\/button>\n<button type=\"button\" aria-pressed=\"{{ isSignup }}\" onClick=\"{{ pickSignup }}\" style=\"{{ signupStyle }}\">Créer un compte<\/button>\n<\/div>\n\n<sc-if value=\"{{ isSignup }}\" hint-placeholder-val=\"{{ false }}\">\n<div style=\"display: flex; flex-direction: column; gap: 6px\">\n<label for=\"nom\" style=\"font-size: 13px; font-weight: 600\">Nom complet<\/label>\n<input id=\"nom\" type=\"text\" autocomplete=\"name\" placeholder=\"Koffi Kouassi\" style=\"min-height: 48px; box-sizing: border-box; border: 1px solid #5B6B75; border-radius: 12px; padding: 0 14px; font-size: 16px; background: #FFFFFF; color: #12263A\">\n<\/div>\n<div style=\"display: flex; flex-direction: column; gap: 8px\">\n<span style=\"font-size: 13px; font-weight: 600\">Je suis<\/span>\n<div style=\"display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px\">\n<button type=\"button\" aria-pressed=\"{{ isClient }}\" onClick=\"{{ pickClient }}\" style=\"{{ clientStyle }}\">Voyageur<\/button>\n<button type=\"button\" aria-pressed=\"{{ isOwner }}\" onClick=\"{{ pickOwner }}\" style=\"{{ ownerStyle }}\">Propriétaire<\/button>\n<\/div>\n<\/div>\n<\/sc-if>\n\n<div style=\"display: flex; flex-direction: column; gap: 6px\">\n<label for=\"tel\" style=\"font-size: 13px; font-weight: 600\">Numéro de téléphone<\/label>\n<div style=\"display: flex; gap: 8px\">\n<div style=\"min-height: 48px; box-sizing: border-box; display: flex; align-items: center; padding: 0 14px; border: 1px solid #DCE3E6; border-radius: 12px; background: #FFFFFF; font-size: 16px; font-weight: 600\">+225<\/div>\n<input id=\"tel\" type=\"tel\" inputmode=\"numeric\" autocomplete=\"tel-national\" placeholder=\"07 00 00 00 00\" style=\"flex: 1; min-width: 0; min-height: 48px; box-sizing: border-box; border: 1px solid #5B6B75; border-radius: 12px; padding: 0 14px; font-size: 16px; background: #FFFFFF; color: #12263A\">\n<\/div>\n<\/div>\n\n<button type=\"button\" onClick=\"{{ send }}\" style=\"{{ primaryStyle }}\">{{ sendLabel }}<\/button>\n<\/sc-if>\n\n<sc-if value=\"{{ isCodeStep }}\" hint-placeholder-val=\"{{ false }}\">\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 4px\">\n<span style=\"font-size: 13px; color: #5B6B75\">Code envoyé par SMS au<\/span>\n<span style=\"font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums\">{{ phoneShown }}<\/span>\n<\/div>\n\n<div style=\"display: flex; flex-direction: column; gap: 6px\">\n<label for=\"code\" style=\"font-size: 13px; font-weight: 600\">Code à 6 chiffres<\/label>\n<input id=\"code\" type=\"text\" inputmode=\"numeric\" autocomplete=\"one-time-code\" maxlength=\"6\" placeholder=\"000000\" style=\"min-height: 52px; box-sizing: border-box; border: 1px solid #5B6B75; border-radius: 12px; padding: 0 14px; font-size: 22px; letter-spacing: 0.3em; font-variant-numeric: tabular-nums; background: #FFFFFF; color: #12263A\">\n<\/div>\n\n<button type=\"button\" onClick=\"{{ verify }}\" style=\"{{ primaryStyle }}\">{{ verifyLabel }}<\/button>\n\n<div style=\"display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px\">\n<button type=\"button\" onClick=\"{{ changePhone }}\" style=\"min-height: 48px; border-radius: 12px; border: 1px solid #DCE3E6; background: #FFFFFF; color: #12263A; font-size: 14px; font-weight: 600; cursor: pointer\">Changer de numéro<\/button>\n<button type=\"button\" onClick=\"{{ resend }}\" style=\"min-height: 48px; border-radius: 12px; border: 1px solid #0B6B6A; background: #DCEFEE; color: #0B6B6A; font-size: 14px; font-weight: 600; cursor: pointer\">Renvoyer le code<\/button>\n<\/div>\n<\/sc-if>\n\n<sc-if value=\"{{ hasNotice }}\" hint-placeholder-val=\"{{ false }}\">\n<div style=\"background: #DCEFEE; color: #0B4F4E; border-radius: 12px; padding: 12px 14px; font-size: 14px; line-height: 1.4\">{{ notice }}<\/div>\n<\/sc-if>\n\n<sc-if value=\"{{ hasError }}\" hint-placeholder-val=\"{{ false }}\">\n<div role=\"alert\" style=\"background: #FDECEA; color: #8A1C12; border-radius: 12px; padding: 12px 14px; font-size: 14px; line-height: 1.4\">{{ error }}<\/div>\n<\/sc-if>\n<\/div>\n<\/div>\n<\/x-dc>\n<script type=\"text/x-dc\" data-dc-script data-props='{\"$preview\":{\"width\":390,\"height\":844}}'>\nclass Component extends DCLogic {\n  constructor(props) {\n    super(props);\n    this.state = { mode: 'login', role: 'client', step: 'phone', phone: '', busy: false, error: '', notice: '' };\n  }\n  componentDidMount() {\n    const api = window.IvoireAPI;\n    if (api.session()) { location.replace('#/Compte'); return; }\n    if (!api.configured()) this.setState({ error: 'La connexion n’est pas encore configurée (adresse Supabase manquante).' });\n  }\n  value(id) {\n    const el = document.getElementById(id);\n    return el ? el.value : '';\n  }\n  normalize(raw) {\n    let d = String(raw || '').replace(/\\D/g, '');\n    if (d.indexOf('225') === 0 && d.length === 13) d = d.slice(3);\n    return d.length === 10 ? '+225' + d : '';\n  }\n  friendly(e) {\n    const m = String((e && e.message) || '');\n    if (/signups not allowed|not allowed for otp/i.test(m)) return 'Aucun compte avec ce numéro. Touchez « Créer un compte ».';\n    if (/rate limit|too many|seconds/i.test(m) || (e && e.status === 429)) return 'Trop de demandes. Réessayez dans une minute.';\n    if (/expired|invalid/i.test(m)) return 'Code incorrect ou expiré. Demandez un nouveau code.';\n    if (/provider|sms/i.test(m)) return 'L’envoi de SMS n’est pas encore activé sur ce projet. Vérifiez le réglage Phone dans Supabase.';\n    if (/failed to fetch|network|load failed/i.test(m)) return 'Pas de connexion internet. Réessayez.';\n    return m || 'Une erreur est survenue. Réessayez.';\n  }\n  sendCode() {\n    const st = this.state;\n    const phone = this.normalize(this.value('tel'));\n    if (!phone) { this.setState({ error: 'Entrez votre numéro à 10 chiffres, par exemple 07 00 00 00 00.' }); return; }\n    const signup = st.mode === 'signup';\n    const name = this.value('nom').trim();\n    if (signup && name.length < 2) { this.setState({ error: 'Indiquez votre nom complet.' }); return; }\n    this.setState({ busy: true, error: '', notice: '' });\n    window.IvoireAPI.sendCode(phone, { create: signup, name: name, role: st.role })\n      .then(() => this.setState({ busy: false, step: 'code', phone: phone, notice: 'Code envoyé. Il arrive en quelques secondes.' }))\n      .catch((e) => this.setState({ busy: false, error: this.friendly(e) }));\n  }\n  checkCode() {\n    const code = this.value('code').replace(/\\D/g, '');\n    if (code.length < 6) { this.setState({ error: 'Entrez les 6 chiffres reçus par SMS.' }); return; }\n    this.setState({ busy: true, error: '', notice: '' });\n    const api = window.IvoireAPI;\n    api.verifyCode(this.state.phone, code)\n      .then(() => api.profile())\n      .then((p) => {\n        const next = this.props.next;\n        const dest = next && next !== 'Connexion' ? next : (p && p.role === 'owner' ? 'Proprietaire' : 'Main');\n        location.hash = dest === 'Main' ? '#/' : '#/' + dest;\n      })\n      .catch((e) => this.setState({ busy: false, error: this.friendly(e) }));\n  }\n  renderVals() {\n    const st = this.state;\n    const pill = (on) => 'min-height: 48px; border-radius: 12px; font-size: 15px; font-weight: 600; cursor: pointer; border: ' + (on ? '2px solid #0B6B6A; background: #DCEFEE; color: #0B6B6A' : '1px solid #DCE3E6; background: #FFFFFF; color: #12263A');\n    const signup = st.mode === 'signup';\n    const digits = st.phone.slice(4);\n    const shown = st.phone ? '+225 ' + digits.replace(/(\\d{2})(?=\\d)/g, '$1 ') : '';\n    return {\n      title: signup ? 'Créer un compte' : 'Connexion',\n      intro: st.step === 'code'\n        ? 'Entrez le code reçu par SMS pour continuer.'\n        : (signup ? 'Créez votre compte en quelques secondes avec votre numéro de téléphone. Pas de mot de passe à retenir.' : 'Entrez votre numéro pour recevoir un code de connexion par SMS.'),\n      isPhoneStep: st.step === 'phone',\n      isCodeStep: st.step === 'code',\n      isLogin: !signup,\n      isSignup: signup,\n      loginStyle: pill(!signup),\n      signupStyle: pill(signup),\n      pickLogin: () => this.setState({ mode: 'login', error: '' }),\n      pickSignup: () => this.setState({ mode: 'signup', error: '' }),\n      isClient: st.role === 'client',\n      isOwner: st.role === 'owner',\n      clientStyle: pill(st.role === 'client'),\n      ownerStyle: pill(st.role === 'owner'),\n      pickClient: () => this.setState({ role: 'client' }),\n      pickOwner: () => this.setState({ role: 'owner' }),\n      primaryStyle: 'width: 100%; min-height: 52px; border: none; border-radius: 14px; background: #0B6B6A; color: #FFFFFF; font-size: 16px; font-weight: 600; cursor: pointer; opacity: ' + (st.busy ? '0.6' : '1'),\n      sendLabel: st.busy ? 'Envoi du code…' : 'Recevoir le code par SMS',\n      verifyLabel: st.busy ? 'Vérification…' : 'Valider',\n      send: () => { if (!st.busy) this.sendCode(); },\n      verify: () => { if (!st.busy) this.checkCode(); },\n      changePhone: () => this.setState({ step: 'phone', error: '', notice: '' }),\n      resend: () => {\n        if (st.busy) return;\n        this.setState({ busy: true, error: '', notice: '' });\n        window.IvoireAPI.sendCode(st.phone, { create: st.mode === 'signup', name: '', role: st.role })\n          .then(() => this.setState({ busy: false, notice: 'Nouveau code envoyé.' }))\n          .catch((e) => this.setState({ busy: false, error: this.friendly(e) }));\n      },\n      phoneShown: shown,\n      hasError: !!st.error,\n      error: st.error,\n      hasNotice: !!st.notice && !st.error,\n      notice: st.notice\n    };\n  }\n}\n<\/script>\n<\/body>\n<\/html>\n", "Compte": "<!doctype html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"utf-8\">\n<title>Mon compte<\/title>\n<script src=\"./support.js\"><\/script>\n<\/head>\n<body>\n<x-dc>\n<helmet>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap\">\n<style>\nbody{margin:0;font-family:'Inter',system-ui,sans-serif;color:#12263A}\na{color:inherit;text-decoration:none}\nbutton{font-family:inherit}\n<\/style>\n<\/helmet>\n<div style=\"width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F7F7; overflow: hidden\">\n<div style=\"display: flex; align-items: center; gap: 12px; padding: 20px 20px 14px; background: #FFFFFF; border-bottom: 1px solid #DCE3E6\">\n<a href=\"Main.dc.html\" aria-label=\"Retour à l'accueil\" style=\"width: 44px; height: 44px; border-radius: 22px; border: 1px solid #DCE3E6; display: flex; align-items: center; justify-content: center\">\n<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#12263A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 5l-7 7 7 7\"/><\/svg>\n<\/a>\n<h1 style=\"margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700\">Mon compte<\/h1>\n<\/div>\n\n<div style=\"flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; padding: 18px 20px 24px\">\n<sc-if value=\"{{ hasNotice }}\" hint-placeholder-val=\"{{ false }}\">\n<div role=\"status\" style=\"background: #FFF4DB; color: #6B4500; border-radius: 12px; padding: 12px 14px; font-size: 14px; line-height: 1.5\">{{ notice }}<\/div>\n<\/sc-if>\n\n<div style=\"background: #FFFFFF; border: 1px solid #DCE3E6; border-radius: 16px; padding: 16px; display: flex; align-items: center; gap: 14px\">\n<div style=\"width: 56px; height: 56px; border-radius: 28px; background: #DCEFEE; color: #0B6B6A; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700; flex-shrink: 0\">{{ initial }}<\/div>\n<div style=\"display: flex; flex-direction: column; gap: 3px; min-width: 0\">\n<span style=\"font-size: 17px; font-weight: 600; line-height: 1.3\">{{ name }}<\/span>\n<span style=\"font-size: 14px; color: #5B6B75; font-variant-numeric: tabular-nums\">{{ phone }}<\/span>\n<span style=\"align-self: flex-start; font-size: 12px; font-weight: 600; color: #0B4F4E; background: #DCEFEE; border-radius: 8px; padding: 3px 8px\">{{ roleLabel }}<\/span>\n<\/div>\n<\/div>\n\n<sc-if value=\"{{ isOwner }}\" hint-placeholder-val=\"{{ false }}\">\n<a href=\"Proprietaire.dc.html\" style=\"display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 14px; background: #0B6B6A; color: #FFFFFF; font-size: 16px; font-weight: 600\">Ouvrir mon espace propriétaire<\/a>\n<\/sc-if>\n\n<sc-if value=\"{{ isClient }}\" hint-placeholder-val=\"{{ false }}\">\n<a href=\"Resultats.dc.html\" style=\"display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 14px; background: #0B6B6A; color: #FFFFFF; font-size: 16px; font-weight: 600\">Chercher une résidence<\/a>\n<\/sc-if>\n\n<button type=\"button\" onClick=\"{{ logout }}\" style=\"min-height: 52px; border-radius: 14px; border: 1px solid #DCE3E6; background: #FFFFFF; color: #12263A; font-size: 16px; font-weight: 600; cursor: pointer\">Se déconnecter<\/button>\n\n<sc-if value=\"{{ hasError }}\" hint-placeholder-val=\"{{ false }}\">\n<div role=\"alert\" style=\"background: #FDECEA; color: #8A1C12; border-radius: 12px; padding: 12px 14px; font-size: 14px; line-height: 1.4\">{{ error }}<\/div>\n<\/sc-if>\n<\/div>\n<\/div>\n<\/x-dc>\n<script type=\"text/x-dc\" data-dc-script data-props='{\"$preview\":{\"width\":390,\"height\":844}}'>\nclass Component extends DCLogic {\n  constructor(props) {\n    super(props);\n    this.state = { profile: null, loading: true, error: '' };\n  }\n  componentDidMount() {\n    window.IvoireAPI.profile()\n      .then((p) => this.setState({ profile: p, loading: false }))\n      .catch((e) => this.setState({ loading: false, error: (e && e.message) || 'Erreur' }));\n  }\n  renderVals() {\n    const api = window.IvoireAPI;\n    const p = this.state.profile;\n    const user = (api.session() && api.session().user) || {};\n    const phoneRaw = (p && p.phone) || user.phone || '';\n    const digits = String(phoneRaw).replace(/\\D/g, '');\n    const local = digits.indexOf('225') === 0 ? digits.slice(3) : digits;\n    const name = this.state.loading ? 'Chargement…' : ((p && p.full_name) || 'Mon compte');\n    const role = p && p.role;\n    return {\n      name: name,\n      initial: (name || '?').trim().charAt(0).toUpperCase(),\n      phone: local ? '+225 ' + local.replace(/(\\d{2})(?=\\d)/g, '$1 ') : '',\n      roleLabel: role === 'owner' ? 'Propriétaire' : role === 'admin' ? 'Administrateur' : 'Voyageur',\n      isOwner: role === 'owner',\n      isClient: role !== 'owner' && !this.state.loading,\n      hasNotice: this.props.notice === 'owner',\n      notice: 'Cet espace est réservé aux propriétaires. Pour publier des résidences, créez un compte propriétaire avec un autre numéro.',\n      hasError: !!this.state.error,\n      error: this.state.error,\n      logout: () => api.signOut().then(() => { location.hash = '#/'; })\n    };\n  }\n}\n<\/script>\n<\/body>\n<\/html>\n"};
+/*
+ * Réglages de l'application.
+ * Ces valeurs sont visibles par tout le monde : n'y mettez JAMAIS de clé secrète
+ * (clé secrète de paiement, clé "service_role", mot de passe).
+ * Les clés publiques (URL Supabase, clé "anon") peuvent être ici.
+ */
+window.APP_CONFIG = {
+  appName: 'Ivoire Résidences',
+  currency: 'FCFA',
+  // Tarifs par jour de 24 h proposés aux propriétaires
+  dailyRates: [15000, 20000, 25000, 30000, 40000, 45000],
+  // Abonnement propriétaire (montants d'exemple, à remplacer par vos vrais tarifs)
+  subscription: { monthly: 10000, yearly: 100000 },
+  // Projet Supabase "Peniel". La clé "publishable" est publique par conception.
+  supabaseUrl: 'https://wrononvmlqbdbesgjulp.supabase.co',
+  supabaseAnonKey: 'sb_publishable_cfv-2nalFpZZcE2aUp5xiw__jHQTx6m'
+};
+
+</script>
+<script>
+/*
+ * dc-lite.js
+ * Petit moteur qui affiche les écrans de la maquette (fichiers .dc.html) tels quels.
+ * Il comprend : {{ valeur }}, <sc-if>, <sc-for>, onClick="{{ fonction }}",
+ * et la classe DCLogic (state, setState, renderVals).
+ * Vous n'avez pas besoin de modifier ce fichier pour changer le design :
+ * le design est dans les fichiers du dossier screens/.
+ */
+(function () {
+  'use strict';
+
+  var HOLE = /\{\{\s*([^}]+?)\s*\}\}/g;
+  var WHOLE = /^\{\{\s*([^}]+?)\s*\}\}$/;
+
+  /* ---------- Classe de base des écrans ---------- */
+  function DCLogic(props) {
+    this.props = props || {};
+    this.state = {};
+    this.__render = null;
+  }
+  DCLogic.prototype.setState = function (partial) {
+    var next = typeof partial === 'function' ? partial(this.state, this.props) : partial;
+    this.state = Object.assign({}, this.state, next);
+    if (this.__render) this.__render();
+  };
+  DCLogic.prototype.forceUpdate = function () {
+    if (this.__render) this.__render();
+  };
+  DCLogic.prototype.componentDidMount = function () {};
+  DCLogic.prototype.renderVals = function () { return {}; };
+
+  /* ---------- Lecture des valeurs {{ chemin.valeur }} ---------- */
+  function resolve(path, scope) {
+    if (path === 'true') return true;
+    if (path === 'false') return false;
+    if (path === 'null') return null;
+    if (/^-?\d+(\.\d+)?$/.test(path)) return Number(path);
+    var parts = path.split('.');
+    var cur = scope;
+    for (var i = 0; i < parts.length; i++) {
+      if (cur == null) return undefined;
+      cur = cur[parts[i]];
+    }
+    return cur;
+  }
+  function str(v) { return v == null ? '' : String(v); }
+  function evalAttr(val, scope) {
+    var m = WHOLE.exec(val || '');
+    return m ? resolve(m[1], scope) : val;
+  }
+
+  /* ---------- Affichage d'un noeud ---------- */
+  function renderChildren(node, scope, parent) {
+    for (var c = node.firstChild; c; c = c.nextSibling) renderNode(c, scope, parent);
+  }
+
+  function renderNode(node, scope, parent) {
+    if (node.nodeType === 3) {
+      parent.appendChild(document.createTextNode(
+        node.nodeValue.replace(HOLE, function (m, p) { return str(resolve(p, scope)); })
+      ));
+      return;
+    }
+    if (node.nodeType !== 1) return;
+
+    var tag = node.localName;
+    if (tag === 'helmet') return;
+
+    if (tag === 'sc-if') {
+      if (evalAttr(node.getAttribute('value'), scope)) renderChildren(node, scope, parent);
+      return;
+    }
+
+    if (tag === 'sc-for') {
+      var list = evalAttr(node.getAttribute('list'), scope) || [];
+      var name = node.getAttribute('as') || 'item';
+      for (var i = 0; i < list.length; i++) {
+        var inner = Object.create(scope);
+        inner[name] = list[i];
+        inner.$index = i;
+        renderChildren(node, inner, parent);
+      }
+      return;
+    }
+
+    var el = node.namespaceURI
+      ? document.createElementNS(node.namespaceURI, node.localName)
+      : document.createElement(tag);
+
+    for (var a = 0; a < node.attributes.length; a++) {
+      var attr = node.attributes[a];
+      var an = attr.name;
+      if (an.indexOf('hint-') === 0) continue;
+      var whole = WHOLE.exec(attr.value);
+
+      if (/^on/i.test(an)) {
+        if (whole) {
+          var fn = resolve(whole[1], scope);
+          if (typeof fn === 'function') el.addEventListener(an.slice(2).toLowerCase(), fn);
+        }
+        continue;
+      }
+      if (whole) {
+        var raw = resolve(whole[1], scope);
+        if (raw == null) continue;
+        el.setAttribute(an, String(raw));
+      } else {
+        el.setAttribute(an, attr.value.replace(HOLE, function (m, p) { return str(resolve(p, scope)); }));
+      }
+    }
+    renderChildren(node, scope, el);
+    parent.appendChild(el);
+  }
+
+  /* ---------- Montage d'un écran ---------- */
+  function mount(def, container, props) {
+    var instance = new def.Component(Object.assign({}, def.props, props));
+
+    function render() {
+      var saved = snapshot(container);
+      var scope = Object.assign({}, instance.renderVals());
+      container.replaceChildren();
+      for (var c = def.template.firstChild; c; c = c.nextSibling) renderNode(c, scope, container);
+      restore(container, saved);
+    }
+
+    instance.__render = render;
+    render();
+    instance.componentDidMount();
+    return instance;
+  }
+
+  /* Garde les champs de saisie et les défilements quand l'écran se redessine */
+  function snapshot(root) {
+    var inputs = {};
+    root.querySelectorAll('input[id], textarea[id]').forEach(function (el) { inputs[el.id] = el.value; });
+    var active = document.activeElement;
+    var focus = active && active.id && root.contains(active)
+      ? { id: active.id, start: active.selectionStart, end: active.selectionEnd } : null;
+    var scrolls = [];
+    root.querySelectorAll('*').forEach(function (el, i) {
+      if (el.scrollTop > 0) scrolls.push([i, el.scrollTop]);
+    });
+    return { inputs: inputs, focus: focus, scrolls: scrolls };
+  }
+  function restore(root, saved) {
+    Object.keys(saved.inputs).forEach(function (id) {
+      var el = root.querySelector('#' + id);
+      if (el) el.value = saved.inputs[id];
+    });
+    var all = root.querySelectorAll('*');
+    saved.scrolls.forEach(function (s) { if (all[s[0]]) all[s[0]].scrollTop = s[1]; });
+    if (saved.focus) {
+      var f = root.querySelector('#' + saved.focus.id);
+      if (f) {
+        f.focus();
+        try { f.setSelectionRange(saved.focus.start, saved.focus.end); } catch (e) { /* ignore */ }
+      }
+    }
+  }
+
+  /* ---------- Lecture d'un fichier .dc.html ---------- */
+  function parse(html) {
+    var doc = new DOMParser().parseFromString(html, 'text/html');
+    var xdc = doc.querySelector('x-dc');
+    var scriptEl = doc.querySelector('script[data-dc-script]');
+    if (!xdc || !scriptEl) throw new Error('Écran invalide');
+    var Component = new Function('DCLogic', scriptEl.textContent + '\nreturn Component;')(DCLogic);
+    var helmet = xdc.querySelector('helmet');
+    return {
+      Component: Component,
+      props: {},
+      template: xdc,
+      helmet: helmet
+    };
+  }
+
+  window.DCLogic = DCLogic;
+  window.DCLite = { parse: parse, mount: mount };
+})();
+
+</script>
+<script>
+/*
+ * api.js
+ * Parle à Supabase (comptes par SMS + base de données) avec de simples appels web.
+ * Aucune clé secrète ici : seulement l'adresse du projet et la clé publique (js/config.js).
+ * Les règles de sécurité (RLS) de la base décident de ce que chacun a le droit de voir.
+ */
+(function () {
+  'use strict';
+
+  var cfg = window.APP_CONFIG || {};
+  var STORE = 'ivoire.session';
+  var session = null;
+  var profileCache = null;
+
+  try { session = JSON.parse(localStorage.getItem(STORE) || 'null'); } catch (e) { session = null; }
+
+  function save(s) {
+    session = s;
+    profileCache = null;
+    try {
+      if (s) localStorage.setItem(STORE, JSON.stringify(s));
+      else localStorage.removeItem(STORE);
+    } catch (e) { /* stockage indisponible : la session ne survivra pas au rechargement */ }
+  }
+
+  function toSession(s) {
+    return {
+      access_token: s.access_token,
+      refresh_token: s.refresh_token,
+      expires_at: s.expires_at || Math.floor(Date.now() / 1000) + (s.expires_in || 3600),
+      user: s.user
+    };
+  }
+
+  function configured() { return !!(cfg.supabaseUrl && cfg.supabaseAnonKey); }
+
+  function messageOf(body, status) {
+    var m = body && (body.msg || body.message || body.error_description || body.error || body.hint);
+    return m ? String(m) : 'Erreur ' + status;
+  }
+
+  /* Un appel web brut vers Supabase */
+  function raw(path, opts) {
+    opts = opts || {};
+    var headers = { apikey: cfg.supabaseAnonKey, 'Content-Type': 'application/json' };
+    if (opts.auth !== false && session && session.access_token) {
+      headers.Authorization = 'Bearer ' + session.access_token;
+    }
+    if (opts.prefer) headers.Prefer = opts.prefer;
+    return fetch(cfg.supabaseUrl + path, {
+      method: opts.method || 'GET',
+      headers: headers,
+      body: opts.body ? JSON.stringify(opts.body) : undefined
+    }).then(function (r) {
+      return r.text().then(function (t) {
+        var body = null;
+        try { body = t ? JSON.parse(t) : null; } catch (e) { body = null; }
+        if (!r.ok) {
+          var err = new Error(messageOf(body, r.status));
+          err.status = r.status;
+          throw err;
+        }
+        return body;
+      });
+    });
+  }
+
+  /* Renouvelle la session un peu avant qu'elle expire */
+  function refreshIfNeeded() {
+    if (!session || !session.refresh_token) return Promise.resolve();
+    if (session.expires_at - Date.now() / 1000 > 60) return Promise.resolve();
+    return raw('/auth/v1/token?grant_type=refresh_token', {
+      method: 'POST', auth: false, body: { refresh_token: session.refresh_token }
+    }).then(function (s) { save(toSession(s)); })
+      .catch(function () { save(null); });
+  }
+
+  function request(path, opts) {
+    return refreshIfNeeded().then(function () { return raw(path, opts); });
+  }
+
+  function first(rows) { return rows && rows.length ? rows[0] : null; }
+  function isId(id) { return /^[0-9a-fA-F-]{36}$/.test(String(id || '')); }
+  function uid() { return session && session.user ? session.user.id : null; }
+
+  /* ---------- Comptes (SMS) ---------- */
+  function sendCode(phone, opts) {
+    var body = { phone: phone, create_user: !!opts.create };
+    if (opts.create) body.data = { full_name: opts.name, phone: phone, role: opts.role };
+    return raw('/auth/v1/otp', { method: 'POST', auth: false, body: body });
+  }
+
+  function verifyCode(phone, code) {
+    return raw('/auth/v1/verify', { method: 'POST', auth: false, body: { type: 'sms', phone: phone, token: code } })
+      .then(function (s) { save(toSession(s)); return session; });
+  }
+
+  function signOut() {
+    var done = session ? raw('/auth/v1/logout', { method: 'POST' }).catch(function () {}) : Promise.resolve();
+    return done.then(function () { save(null); });
+  }
+
+  function profile() {
+    if (!session) return Promise.resolve(null);
+    if (profileCache) return Promise.resolve(profileCache);
+    return request('/rest/v1/profiles?select=*&id=eq.' + uid()).then(function (rows) {
+      profileCache = first(rows);
+      return profileCache;
+    });
+  }
+
+  /* ---------- Résidences ---------- */
+  var PUBLIC_COLUMNS = 'id,name,quarter,price_per_day,rooms,max_guests,equipments,description,approx_lat,approx_lng';
+
+  function listResidences() {
+    return request('/rest/v1/residences?select=' + PUBLIC_COLUMNS + '&status=eq.online&order=created_at.desc');
+  }
+
+  function getResidence(id) {
+    if (!isId(id)) return Promise.resolve(null);
+    return request('/rest/v1/residences?select=' + PUBLIC_COLUMNS + '&status=eq.online&id=eq.' + id).then(first);
+  }
+
+  function myResidences() {
+    return request('/rest/v1/residences?select=id,name,quarter,price_per_day,status,approved,created_at&owner_id=eq.' +
+      uid() + '&order=created_at.desc');
+  }
+
+  function createResidence(residence, privateInfo) {
+    var row = Object.assign({ owner_id: uid(), status: 'pending' }, residence);
+    return request('/rest/v1/residences', { method: 'POST', prefer: 'return=representation', body: row })
+      .then(function (rows) {
+        var created = first(rows);
+        if (!created) throw new Error('La résidence n’a pas été enregistrée.');
+        if (!privateInfo) return created;
+        var priv = Object.assign({ residence_id: created.id }, privateInfo);
+        return request('/rest/v1/residence_private', { method: 'POST', body: priv }).then(function () { return created; });
+      });
+  }
+
+  function setStatus(id, status) {
+    if (!isId(id)) return Promise.reject(new Error('Résidence inconnue'));
+    return request('/rest/v1/residences?id=eq.' + id, {
+      method: 'PATCH', prefer: 'return=representation', body: { status: status }
+    }).then(function (rows) {
+      var updated = first(rows);
+      if (!updated) throw new Error('Modification refusée : cette résidence n’est pas encore validée.');
+      return updated;
+    });
+  }
+
+  function ownerBookings(residenceIds) {
+    if (!residenceIds || !residenceIds.length) return Promise.resolve([]);
+    var today = new Date().toISOString().slice(0, 10);
+    return request('/rest/v1/bookings?select=id,residence_id,start_date,end_date,guests,total,status' +
+      '&residence_id=in.(' + residenceIds.join(',') + ')&status=in.(pending,confirmed)' +
+      '&end_date=gte.' + today + '&order=start_date.asc');
+  }
+
+  function ownerMonthRevenue(residenceIds) {
+    if (!residenceIds || !residenceIds.length) return Promise.resolve(0);
+    var now = new Date();
+    var start = new Date(Date.UTC(now.getFullYear(), now.getMonth(), 1)).toISOString().slice(0, 10);
+    var next = new Date(Date.UTC(now.getFullYear(), now.getMonth() + 1, 1)).toISOString().slice(0, 10);
+    return request('/rest/v1/bookings?select=total&residence_id=in.(' + residenceIds.join(',') + ')' +
+      '&status=in.(confirmed,completed)&start_date=gte.' + start + '&start_date=lt.' + next)
+      .then(function (rows) {
+        return (rows || []).reduce(function (sum, r) { return sum + (r.total || 0); }, 0);
+      });
+  }
+
+  function mySubscription() {
+    return request('/rest/v1/subscriptions?select=*&owner_id=eq.' + uid() + '&status=eq.active&order=created_at.desc&limit=1')
+      .then(first);
+  }
+
+  /* ---------- Outils ---------- */
+  function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
+
+  function distanceKm(lat1, lng1, lat2, lng2) {
+    var rad = Math.PI / 180;
+    var dLat = (lat2 - lat1) * rad;
+    var dLng = (lng2 - lng1) * rad;
+    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(lat1 * rad) * Math.cos(lat2 * rad) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+    return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  /* Position GPS du téléphone (le navigateur demande l'autorisation) */
+  function locate() {
+    return new Promise(function (resolve, reject) {
+      if (!navigator.geolocation) {
+        reject(new Error('La localisation n’est pas disponible sur cet appareil.'));
+        return;
+      }
+      navigator.geolocation.getCurrentPosition(function (pos) {
+        resolve({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+      }, function (err) {
+        var msg = 'Position introuvable. Réessayez.';
+        if (err && err.code === 1) msg = 'Localisation refusée. Autorisez-la dans Réglages, Safari, Localisation.';
+        reject(new Error(msg));
+      }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 });
+    });
+  }
+
+  window.IvoireAPI = {
+    configured: configured,
+    session: function () { return session; },
+    sendCode: sendCode,
+    verifyCode: verifyCode,
+    signOut: signOut,
+    profile: profile,
+    listResidences: listResidences,
+    getResidence: getResidence,
+    myResidences: myResidences,
+    createResidence: createResidence,
+    setStatus: setStatus,
+    ownerBookings: ownerBookings,
+    ownerMonthRevenue: ownerMonthRevenue,
+    mySubscription: mySubscription,
+    fmt: fmt,
+    distanceKm: distanceKm,
+    locate: locate
+  };
+})();
+
+</script>
+<script>
+/*
+ * app.js
+ * Lanceur de l'application : choisit l'écran à afficher selon l'adresse (#/Fiche?id=..., #/Ajouter...),
+ * vérifie la connexion pour les pages protégées, charge le fichier de l'écran dans screens/
+ * et le dessine avec dc-lite.js.
+ */
+(function () {
+  'use strict';
+
+  var ROOT = document.getElementById('screen');
+  var ROUTES = {
+    Main: 1, Resultats: 1, Fiche: 1, Reservation: 1,
+    Proprietaire: 1, Ajouter: 1, Abonnement: 1,
+    Connexion: 1, Compte: 1
+  };
+  // Pages qui demandent une connexion : 'user' = tout compte, 'owner' = compte propriétaire
+  var GUARDS = {
+    Reservation: 'user', Compte: 'user',
+    Proprietaire: 'owner', Ajouter: 'owner', Abonnement: 'owner'
+  };
+  var cache = {};
+  var current = null;
+  var showToken = 0;
+
+  function parseHash() {
+    var h = location.hash.replace(/^#\/?/, '');
+    var q = h.indexOf('?');
+    var name = q < 0 ? h : h.slice(0, q);
+    var params = {};
+    if (q >= 0) {
+      h.slice(q + 1).split('&').forEach(function (pair) {
+        if (!pair) return;
+        var kv = pair.split('=');
+        try {
+          params[decodeURIComponent(kv[0])] = decodeURIComponent((kv[1] || '').replace(/\+/g, ' '));
+        } catch (e) { /* paramètre illisible : ignoré */ }
+      });
+    }
+    return { name: ROUTES[name] ? name : 'Main', params: params };
+  }
+
+  function fetchScreen(name) {
+    if (cache[name]) return Promise.resolve(cache[name]);
+    var inline = window.SCREENS && window.SCREENS[name];
+    var source = inline
+      ? Promise.resolve(inline)
+      : fetch('screens/' + name + '.dc.html').then(function (r) {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.text();
+        });
+    return source.then(function (html) {
+      cache[name] = window.DCLite.parse(html);
+      return cache[name];
+    });
+  }
+
+  /* Reprend les polices et styles propres à l'écran (balise <helmet> de la maquette) */
+  function applyHelmet(def) {
+    document.querySelectorAll('style[data-screen]').forEach(function (s) { s.remove(); });
+    if (!def.helmet) return;
+    def.helmet.querySelectorAll('style').forEach(function (s) {
+      var copy = document.createElement('style');
+      copy.setAttribute('data-screen', '');
+      copy.textContent = s.textContent;
+      document.head.appendChild(copy);
+    });
+    def.helmet.querySelectorAll('link[href]').forEach(function (l) {
+      var href = l.getAttribute('href');
+      if (!document.head.querySelector('link[href="' + href + '"]')) {
+        var copy = document.createElement('link');
+        copy.rel = l.getAttribute('rel') || 'stylesheet';
+        copy.href = href;
+        document.head.appendChild(copy);
+      }
+    });
+  }
+
+  function showError(err) {
+    ROOT.replaceChildren();
+    var box = document.createElement('div');
+    box.className = 'app-error';
+    var title = document.createElement('strong');
+    title.textContent = 'Impossible d’afficher cet écran';
+    var text = document.createElement('p');
+    text.textContent = 'Ouvrez l’application depuis son adresse en ligne (https), pas depuis le fichier téléchargé. Détail : ' + err.message;
+    box.appendChild(title);
+    box.appendChild(text);
+    ROOT.appendChild(box);
+  }
+
+  function render(route, token) {
+    fetchScreen(route.name).then(function (def) {
+      if (token !== showToken) return;
+      applyHelmet(def);
+      if (current) current.__render = null; // l'ancien écran ne doit plus se redessiner
+      ROOT.replaceChildren();
+      current = window.DCLite.mount(def, ROOT, route.params);
+      window.scrollTo(0, 0);
+    }).catch(function (err) {
+      if (token === showToken) showError(err);
+    });
+  }
+
+  function redirect(name, query) {
+    location.replace('#/' + name + (query ? '?' + query : ''));
+  }
+
+  function show() {
+    var token = ++showToken;
+    var route = parseHash();
+    var guard = GUARDS[route.name];
+    var api = window.IvoireAPI;
+
+    if (guard && api && api.configured()) {
+      if (!api.session()) {
+        redirect('Connexion', 'next=' + route.name);
+        return;
+      }
+      if (guard === 'owner') {
+        api.profile().then(function (p) {
+          if (token !== showToken) return;
+          if (p && p.role === 'owner') render(route, token);
+          else redirect('Compte', 'notice=owner');
+        }).catch(function (err) {
+          if (token === showToken) showError(err);
+        });
+        return;
+      }
+    }
+    render(route, token);
+  }
+
+  /* Les liens de la maquette (href="Fiche.dc.html?id=...") deviennent des liens de navigation */
+  function go(name, query) {
+    var target = (name === 'Main' && !query ? '#/' : '#/' + name) + (query ? '?' + query : '');
+    if (location.hash === target) show();
+    else location.hash = target;
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var m = /(?:^|\/)([A-Za-z]+)\.dc\.html(?:\?(.*))?$/.exec(a.getAttribute('href'));
+    if (!m || !ROUTES[m[1]]) return;
+    e.preventDefault();
+    go(m[1], m[2] || '');
+  });
+
+  window.addEventListener('hashchange', show);
+  show();
+})();
+
+</script>
+</body>
+</html>
